@@ -1,0 +1,118 @@
+{
+  "Metadata": {
+    "title": "Guild Bazaar — Wspólnota Rekonstruktorów i LARP",
+    "description": "Platforma dla bractw, stowarzyszeń, rękodzielników i wystawców związanych z rekonstrukcjami historycznymi, LARP-em i cosplay."
+  },
+  "LanguageSwitcher": {
+    "label": "Język",
+    "pl": "PL",
+    "en": "EN"
+  },
+  "Hero": {
+    "title": "Jedno miejsce dla <highlight>rekonstruktorów,</highlight> LARPowiczów i cosplayerów",
+    "subtitle": "Guild Bazaar to platforma łącząca społeczności historyczne i fantastyczne — bractwa, stowarzyszenia, rękodzielników i wystawców w jednym miejscu.",
+    "ctaJoin": "Dołącz do listy",
+    "ctaPlatform": "Zobacz platformę",
+    "epochs": {
+      "medieval": "Średniowiecze",
+      "fantasy": "Fantasy",
+      "larp": "LARP",
+      "militaria": "Militaria",
+      "cosplay": "Cosplay",
+      "reconstruction": "Rekonstrukcje"
+    }
+  },
+  "Features": {
+    "eyebrow": "Co oferujemy",
+    "title": "Wszystko czego potrzebuje społeczność",
+    "subtitle": "Guild Bazaar łączy wszystkich uczestników sceny rekonstrukcyjnej — od nowicjuszy po weteranów.",
+    "items": {
+      "associations": {
+        "title": "Bractwa i stowarzyszenia",
+        "description": "Stwórz profil swojego bractwa lub stowarzyszenia, opisz historię, specjalizację i rekrutuj nowych członków.",
+        "epoch": "Rekonstrukcje"
+      },
+      "marketplace": {
+        "title": "Marketplace rękodzielników",
+        "description": "Wystawiaj oferty sprzedaży lub usług — zbroje, stroje, rekwizyty, tkactwo i wszelkie rękodzieło.",
+        "epoch": "Wystawcy"
+      },
+      "search": {
+        "title": "Zaawansowane wyszukiwanie",
+        "description": "Filtruj oferty i bractwa według epoki, lokalizacji, specjalizacji i dostępności.",
+        "epoch": "Wszystkie epoki"
+      },
+      "vendor": {
+        "title": "Profil wystawcy",
+        "description": "Zarządzaj swoimi ofertami, opisem działalności i pojawiaj się na listach wystawców wydarzeń.",
+        "epoch": "Wystawcy"
+      }
+    }
+  },
+  "Platform": {
+    "eyebrow": "Zobacz platformę",
+    "title": "Jak wygląda Guild Bazaar",
+    "subtitle": "Przejrzyj kluczowe widoki platformy — od przeglądania ofert po panele dla wystawców i bractw.",
+    "items": {
+      "offers": {
+        "title": "Oferty i rękodzieło",
+        "description": "Przeglądaj oferty zbroi, strojów i rękodzieła z całej Polski.",
+        "alt": "Przegląd ofert rękodzielników na Guild Bazaar",
+        "slug": "oferty-i-rekodzielo"
+      },
+      "associations": {
+        "title": "Bractwa i stowarzyszenia",
+        "description": "Odkrywaj grupy rekonstrukcyjne według epoki, lokalizacji i specjalizacji.",
+        "alt": "Lista bractw i stowarzyszeń historycznych",
+        "slug": "bractwa-i-stowarzyszenia"
+      },
+      "vendor": {
+        "title": "Panel wystawcy",
+        "description": "Zarządzaj ofertami, statystykami i profilem swojej pracowni.",
+        "alt": "Panel wystawcy z listą ofert",
+        "slug": "panel-wystawcy"
+      },
+      "associationPanel": {
+        "title": "Panel bractwa",
+        "description": "Zarządzaj członkami, wydarzeniami i profilem swojego stowarzyszenia.",
+        "alt": "Panel bractwa z członkami i wydarzeniami",
+        "slug": "panel-bractwa"
+      }
+    }
+  },
+  "Form": {
+    "eyebrow": "Wyraź zainteresowanie",
+    "title": "Dołącz do listy oczekujących",
+    "subtitle": "Zostaw swoje dane — skontaktujemy się z Tobą przed oficjalnym startem platformy.",
+    "successTitle": "Dziękujemy za zainteresowanie!",
+    "successMessage": "Zapisaliśmy Twoje dane. Poinformujemy Cię o starcie platformy i zaprosimy na beta-testy.",
+    "nameLabel": "Imię i nazwisko *",
+    "namePlaceholder": "Jan Kowalski",
+    "emailLabel": "Adres e-mail *",
+    "emailPlaceholder": "jan@example.pl",
+    "roleLabel": "Kim jesteś? *",
+    "rolePlaceholder": "Wybierz swoją rolę...",
+    "messageLabel": "Dodatkowa wiadomość (opcjonalnie)",
+    "messagePlaceholder": "Opowiedz nam czego oczekujesz od Guild Bazaar, czym się zajmujesz lub co chciałbyś zobaczyć na platformie...",
+    "submit": "Wyślij zgłoszenie",
+    "privacy": "Twoje dane są bezpieczne. Nie udostępniamy ich stronom trzecim.",
+    "roles": {
+      "participant": "Uczestnik / Hobbysta",
+      "reconstructor": "Rekonstruktor historyczny",
+      "larp": "LARPowicz",
+      "cosplayer": "Cosplayerka / Cosplayer",
+      "artisan": "Rękodzielnik / Twórca",
+      "vendor": "Wystawca / Sprzedawca",
+      "association": "Przedstawiciel bractwa / stowarzyszenia",
+      "organizer": "Organizator wydarzeń"
+    }
+  },
+  "Footer": {
+    "description": "Platforma dla rekonstruktorów historycznych, LARPowiczów i cosplayerów. Bractwa, rękodzielnictwo i społeczność w jednym miejscu.",
+    "copyright": "© 2026 Guild Bazaar",
+    "beta": "Projekt w fazie beta"
+  },
+  "Common": {
+    "brand": "Guild Bazaar"
+  }
+}

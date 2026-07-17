@@ -1,0 +1,118 @@
+{
+  "Metadata": {
+    "title": "Guild Bazaar — Community for Re-enactors and LARP",
+    "description": "A platform for guilds, associations, artisans and vendors connected to historical re-enactment, LARP and cosplay."
+  },
+  "LanguageSwitcher": {
+    "label": "Language",
+    "pl": "PL",
+    "en": "EN"
+  },
+  "Hero": {
+    "title": "One place for <highlight>re-enactors,</highlight> LARPers and cosplayers",
+    "subtitle": "Guild Bazaar connects historical and fantasy communities — guilds, associations, artisans and vendors in one place.",
+    "ctaJoin": "Join the waitlist",
+    "ctaPlatform": "See the platform",
+    "epochs": {
+      "medieval": "Medieval",
+      "fantasy": "Fantasy",
+      "larp": "LARP",
+      "militaria": "Militaria",
+      "cosplay": "Cosplay",
+      "reconstruction": "Re-enactment"
+    }
+  },
+  "Features": {
+    "eyebrow": "What we offer",
+    "title": "Everything the community needs",
+    "subtitle": "Guild Bazaar brings together everyone in the re-enactment scene — from newcomers to veterans.",
+    "items": {
+      "associations": {
+        "title": "Guilds and associations",
+        "description": "Create a profile for your guild or association, share its history and specialization, and recruit new members.",
+        "epoch": "Re-enactment"
+      },
+      "marketplace": {
+        "title": "Artisan marketplace",
+        "description": "List products or services — armour, costumes, props, weaving and all kinds of craft.",
+        "epoch": "Vendors"
+      },
+      "search": {
+        "title": "Advanced search",
+        "description": "Filter listings and guilds by era, location, specialization and availability.",
+        "epoch": "All eras"
+      },
+      "vendor": {
+        "title": "Vendor profile",
+        "description": "Manage your listings, business description and appear on event vendor lists.",
+        "epoch": "Vendors"
+      }
+    }
+  },
+  "Platform": {
+    "eyebrow": "See the platform",
+    "title": "What Guild Bazaar looks like",
+    "subtitle": "Browse key views of the platform — from browsing listings to panels for vendors and guilds.",
+    "items": {
+      "offers": {
+        "title": "Listings and craft",
+        "description": "Browse offers for armour, costumes and craft from across Poland.",
+        "alt": "Artisan listings overview on Guild Bazaar",
+        "slug": "listings-and-craft"
+      },
+      "associations": {
+        "title": "Guilds and associations",
+        "description": "Discover re-enactment groups by era, location and specialization.",
+        "alt": "List of historical guilds and associations",
+        "slug": "guilds-and-associations"
+      },
+      "vendor": {
+        "title": "Vendor panel",
+        "description": "Manage listings, statistics and your workshop profile.",
+        "alt": "Vendor panel with listing management",
+        "slug": "vendor-panel"
+      },
+      "associationPanel": {
+        "title": "Guild panel",
+        "description": "Manage members, events and your association profile.",
+        "alt": "Guild panel with members and events",
+        "slug": "guild-panel"
+      }
+    }
+  },
+  "Form": {
+    "eyebrow": "Express your interest",
+    "title": "Join the waitlist",
+    "subtitle": "Leave your details — we will contact you before the official platform launch.",
+    "successTitle": "Thank you for your interest!",
+    "successMessage": "We saved your details. We will notify you about the launch and invite you to beta tests.",
+    "nameLabel": "Full name *",
+    "namePlaceholder": "John Smith",
+    "emailLabel": "Email address *",
+    "emailPlaceholder": "john@example.com",
+    "roleLabel": "Who are you? *",
+    "rolePlaceholder": "Select your role...",
+    "messageLabel": "Additional message (optional)",
+    "messagePlaceholder": "Tell us what you expect from Guild Bazaar, what you do or what you would like to see on the platform...",
+    "submit": "Submit application",
+    "privacy": "Your data is safe. We do not share it with third parties.",
+    "roles": {
+      "participant": "Participant / Hobbyist",
+      "reconstructor": "Historical re-enactor",
+      "larp": "LARPer",
+      "cosplayer": "Cosplayer",
+      "artisan": "Artisan / Creator",
+      "vendor": "Vendor / Seller",
+      "association": "Guild / association representative",
+      "organizer": "Event organizer"
+    }
+  },
+  "Footer": {
+    "description": "A platform for historical re-enactors, LARPers and cosplayers. Guilds, craft and community in one place.",
+    "copyright": "© 2026 Guild Bazaar",
+    "beta": "Project in beta"
+  },
+  "Common": {
+    "brand": "Guild Bazaar"
+  }
+}
