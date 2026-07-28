@@ -1,7 +1,7 @@
 'use client'
 
-import { useState } from 'react'
-import { useTranslations } from 'next-intl'
+import { useState, useTransition } from 'react'
+import { useLocale, useTranslations } from 'next-intl'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import {
@@ -11,7 +11,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select'
-import { Send, CheckCircle2 } from 'lucide-react'
+import { Send, CheckCircle2, Loader2 } from 'lucide-react'
+import { submitWaitlist } from '@/app/actions/waitlist'
 
 const roleKeys = [
   'participant',
@@ -26,17 +27,45 @@ const roleKeys = [
 
 export function LandingForm() {
   const t = useTranslations('Form')
+  const locale = useLocale()
+  const [pending, startTransition] = useTransition()
   const [sent, setSent] = useState(false)
+  const [error, setError] = useState<string | null>(null)
   const [form, setForm] = useState({
     name: '',
     email: '',
     role: '',
     message: '',
+    website: '',
   })
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
-    setSent(true)
+    setError(null)
+
+    startTransition(async () => {
+      const result = await submitWaitlist({
+        name: form.name,
+        email: form.email,
+        role: form.role,
+        message: form.message,
+        locale,
+        website: form.website,
+      })
+
+      if (result.ok) {
+        setSent(true)
+        return
+      }
+
+      if (result.error === 'duplicate') {
+        setError(t('errorDuplicate'))
+      } else if (result.error === 'validation') {
+        setError(t('errorValidation'))
+      } else {
+        setError(t('errorServer'))
+      }
+    })
   }
 
   return (
@@ -65,6 +94,19 @@ export function LandingForm() {
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="flex flex-col gap-5">
+              <div className="absolute -left-[9999px] top-auto h-0 w-0 overflow-hidden" aria-hidden="true">
+                <label htmlFor="website">Website</label>
+                <input
+                  id="website"
+                  name="website"
+                  type="text"
+                  tabIndex={-1}
+                  autoComplete="off"
+                  value={form.website}
+                  onChange={(e) => setForm({ ...form, website: e.target.value })}
+                />
+              </div>
+
               <div className="grid gap-5 sm:grid-cols-2">
                 <div className="flex flex-col gap-1.5">
                   <label htmlFor="name" className="text-muted-foreground font-sans text-sm">
@@ -74,6 +116,7 @@ export function LandingForm() {
                     id="name"
                     placeholder={t('namePlaceholder')}
                     required
+                    disabled={pending}
                     value={form.name}
                     onChange={(e) => setForm({ ...form, name: e.target.value })}
                     className="border-border bg-input focus:border-primary/60"
@@ -89,6 +132,7 @@ export function LandingForm() {
                     type="email"
                     placeholder={t('emailPlaceholder')}
                     required
+                    disabled={pending}
                     value={form.email}
                     onChange={(e) => setForm({ ...form, email: e.target.value })}
                     className="border-border bg-input focus:border-primary/60"
@@ -100,6 +144,7 @@ export function LandingForm() {
                 <label className="text-muted-foreground font-sans text-sm">{t('roleLabel')}</label>
                 <Select
                   required
+                  disabled={pending}
                   onValueChange={(v) => setForm({ ...form, role: typeof v === 'string' ? v : '' })}
                 >
                   <SelectTrigger className="border-border bg-input w-full">
@@ -123,17 +168,25 @@ export function LandingForm() {
                   id="message"
                   placeholder={t('messagePlaceholder')}
                   rows={4}
+                  disabled={pending}
                   value={form.message}
                   onChange={(e) => setForm({ ...form, message: e.target.value })}
                   className="border-border bg-input focus:border-primary/60 resize-none leading-relaxed"
                 />
               </div>
 
+              {error ? (
+                <p className="text-destructive text-center text-sm" role="alert">
+                  {error}
+                </p>
+              ) : null}
+
               <button
                 type="submit"
-                className="bg-primary font-display text-primary-foreground flex items-center justify-center gap-2 rounded-md px-6 py-3 text-sm font-semibold tracking-wider transition-all hover:brightness-110 active:scale-95"
+                disabled={pending}
+                className="bg-primary font-display text-primary-foreground flex items-center justify-center gap-2 rounded-md px-6 py-3 text-sm font-semibold tracking-wider transition-all hover:brightness-110 active:scale-95 disabled:opacity-60"
               >
-                <Send className="h-4 w-4" />
+                {pending ? <Loader2 className="h-4 w-4 animate-spin" /> : <Send className="h-4 w-4" />}
                 {t('submit')}
               </button>
 
