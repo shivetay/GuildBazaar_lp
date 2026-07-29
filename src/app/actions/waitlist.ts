@@ -29,12 +29,7 @@ export async function submitWaitlist(input: {
   role: string
   message?: string
   locale?: string
-  website?: string
 }): Promise<WaitlistResult> {
-  if (input.website && input.website.trim().length > 0) {
-    return { ok: true }
-  }
-
   const name = input.name?.trim() ?? ''
   const email = input.email?.trim().toLowerCase() ?? ''
   const role = input.role?.trim() ?? ''

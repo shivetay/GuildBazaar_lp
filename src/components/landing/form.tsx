@@ -36,7 +36,6 @@ export function LandingForm() {
     email: '',
     role: '',
     message: '',
-    website: '',
   })
 
   function handleSubmit(e: React.FormEvent) {
@@ -50,7 +49,6 @@ export function LandingForm() {
         role: form.role,
         message: form.message,
         locale,
-        website: form.website,
       })
 
       if (result.ok) {
@@ -94,19 +92,6 @@ export function LandingForm() {
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="flex flex-col gap-5">
-              <div className="absolute -left-[9999px] top-auto h-0 w-0 overflow-hidden" aria-hidden="true">
-                <label htmlFor="website">Website</label>
-                <input
-                  id="website"
-                  name="website"
-                  type="text"
-                  tabIndex={-1}
-                  autoComplete="off"
-                  value={form.website}
-                  onChange={(e) => setForm({ ...form, website: e.target.value })}
-                />
-              </div>
-
               <div className="grid gap-5 sm:grid-cols-2">
                 <div className="flex flex-col gap-1.5">
                   <label htmlFor="name" className="text-muted-foreground font-sans text-sm">
