@@ -126,14 +126,23 @@ export function LandingForm() {
               </div>
 
               <div className="flex flex-col gap-1.5">
-                <label className="text-muted-foreground font-sans text-sm">{t('roleLabel')}</label>
+                <label htmlFor="role" className="text-muted-foreground font-sans text-sm">
+                  {t('roleLabel')}
+                </label>
                 <Select
                   required
                   disabled={pending}
+                  value={form.role || null}
                   onValueChange={(v) => setForm({ ...form, role: typeof v === 'string' ? v : '' })}
                 >
-                  <SelectTrigger className="border-border bg-input w-full">
-                    <SelectValue placeholder={t('rolePlaceholder')} />
+                  <SelectTrigger id="role" className="border-border bg-input w-full">
+                    <SelectValue placeholder={t('rolePlaceholder')}>
+                      {(value) =>
+                        typeof value === 'string' && value.length > 0
+                          ? t(`roles.${value as (typeof roleKeys)[number]}`)
+                          : null
+                      }
+                    </SelectValue>
                   </SelectTrigger>
                   <SelectContent>
                     {roleKeys.map((key) => (
