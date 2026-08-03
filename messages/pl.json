@@ -96,6 +96,9 @@
     "messagePlaceholder": "Opowiedz nam czego oczekujesz od Guild Bazaar, czym się zajmujesz lub co chciałbyś zobaczyć na platformie...",
     "submit": "Wyślij zgłoszenie",
     "privacy": "Twoje dane są bezpieczne. Nie udostępniamy ich stronom trzecim.",
+    "errorDuplicate": "Ten adres e-mail jest już na liście.",
+    "errorValidation": "Sprawdź poprawność wypełnionych pól.",
+    "errorServer": "Nie udało się zapisać zgłoszenia. Spróbuj ponownie za chwilę.",
     "roles": {
       "participant": "Uczestnik / Hobbysta",
       "reconstructor": "Rekonstruktor historyczny",

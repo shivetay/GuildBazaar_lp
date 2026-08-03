@@ -96,6 +96,9 @@
     "messagePlaceholder": "Tell us what you expect from Guild Bazaar, what you do or what you would like to see on the platform...",
     "submit": "Submit application",
     "privacy": "Your data is safe. We do not share it with third parties.",
+    "errorDuplicate": "This email is already on the waitlist.",
+    "errorValidation": "Please check the form fields.",
+    "errorServer": "Could not save your signup. Please try again shortly.",
     "roles": {
       "participant": "Participant / Hobbyist",
       "reconstructor": "Historical re-enactor",
