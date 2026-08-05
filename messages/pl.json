@@ -95,7 +95,9 @@
     "messageLabel": "Dodatkowa wiadomość (opcjonalnie)",
     "messagePlaceholder": "Opowiedz nam czego oczekujesz od Guild Bazaar, czym się zajmujesz lub co chciałbyś zobaczyć na platformie...",
     "submit": "Wyślij zgłoszenie",
-    "privacy": "Twoje dane są bezpieczne. Nie udostępniamy ich stronom trzecim.",
+    "privacyBefore": "Wysyłając formularz, akceptujesz ",
+    "privacyLink": "Politykę prywatności",
+    "privacyAfter": ". Twoje dane wykorzystujemy wyłącznie w celu kontaktu w sprawie startu platformy.",
     "errorDuplicate": "Ten adres e-mail jest już na liście.",
     "errorValidation": "Sprawdź poprawność wypełnionych pól.",
     "errorServer": "Nie udało się zapisać zgłoszenia. Spróbuj ponownie za chwilę.",
@@ -113,7 +115,23 @@
   "Footer": {
     "description": "Platforma dla rekonstruktorów historycznych, LARPowiczów i cosplayerów. Bractwa, rękodzielnictwo i społeczność w jednym miejscu.",
     "copyright": "© 2026 Guild Bazaar",
-    "beta": "Projekt w fazie beta"
+    "beta": "Projekt w fazie beta",
+    "links": {
+      "terms": "Regulamin",
+      "privacy": "Polityka prywatności",
+      "cookies": "Polityka cookies",
+      "contact": "Kontakt"
+    }
+  },
+  "Legal": {
+    "back": "Powrót na stronę główną",
+    "lastUpdated": "Ostatnia aktualizacja: {date}",
+    "meta": {
+      "terms": "Regulamin — Guild Bazaar",
+      "privacy": "Polityka prywatności — Guild Bazaar",
+      "cookies": "Polityka cookies — Guild Bazaar",
+      "contact": "Kontakt — Guild Bazaar"
+    }
   },
   "Common": {
     "brand": "Guild Bazaar"

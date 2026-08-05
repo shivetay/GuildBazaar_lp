@@ -1,5 +1,13 @@
 import { Sword } from 'lucide-react'
 import { getTranslations } from 'next-intl/server'
+import { Link } from '@/i18n/navigation'
+
+const legalLinks = [
+  { href: '/terms' as const, key: 'terms' as const },
+  { href: '/privacy-policy' as const, key: 'privacy' as const },
+  { href: '/cookie-policy' as const, key: 'cookies' as const },
+  { href: '/contact' as const, key: 'contact' as const },
+]
 
 export async function LandingFooter() {
   const t = await getTranslations('Footer')
@@ -15,6 +23,20 @@ export async function LandingFooter() {
           </span>
         </div>
         <p className="text-muted-foreground max-w-md text-sm leading-relaxed">{t('description')}</p>
+        <nav
+          aria-label={tCommon('brand')}
+          className="text-muted-foreground flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs"
+        >
+          {legalLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="hover:text-foreground underline-offset-4 transition-colors hover:underline"
+            >
+              {t(`links.${link.key}`)}
+            </Link>
+          ))}
+        </nav>
         <div className="text-muted-foreground/60 flex items-center gap-6 text-xs">
           <span>{t('copyright')}</span>
           <span>•</span>

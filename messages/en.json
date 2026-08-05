@@ -95,7 +95,9 @@
     "messageLabel": "Additional message (optional)",
     "messagePlaceholder": "Tell us what you expect from Guild Bazaar, what you do or what you would like to see on the platform...",
     "submit": "Submit application",
-    "privacy": "Your data is safe. We do not share it with third parties.",
+    "privacyBefore": "By submitting this form, you accept our ",
+    "privacyLink": "Privacy Policy",
+    "privacyAfter": ". We use your data only to contact you about the platform launch.",
     "errorDuplicate": "This email is already on the waitlist.",
     "errorValidation": "Please check the form fields.",
     "errorServer": "Could not save your signup. Please try again shortly.",
@@ -113,7 +115,23 @@
   "Footer": {
     "description": "A platform for historical re-enactors, LARPers and cosplayers. Guilds, craft and community in one place.",
     "copyright": "© 2026 Guild Bazaar",
-    "beta": "Project in beta"
+    "beta": "Project in beta",
+    "links": {
+      "terms": "Terms",
+      "privacy": "Privacy Policy",
+      "cookies": "Cookie Policy",
+      "contact": "Contact"
+    }
+  },
+  "Legal": {
+    "back": "Back to home",
+    "lastUpdated": "Last updated: {date}",
+    "meta": {
+      "terms": "Terms of Service — Guild Bazaar",
+      "privacy": "Privacy Policy — Guild Bazaar",
+      "cookies": "Cookie Policy — Guild Bazaar",
+      "contact": "Contact — Guild Bazaar"
+    }
   },
   "Common": {
     "brand": "Guild Bazaar"
