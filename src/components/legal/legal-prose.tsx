@@ -14,9 +14,9 @@ export function LegalProse({ sections }: Props) {
               {section.title}
             </h2>
           ) : null}
-          {section.paragraphs?.map((paragraph) => (
+          {section.paragraphs?.map((paragraph, index) => (
             <p
-              key={paragraph.slice(0, 48)}
+              key={index}
               className="text-muted-foreground text-sm leading-relaxed sm:text-base"
             >
               {paragraph}
@@ -24,8 +24,8 @@ export function LegalProse({ sections }: Props) {
           ))}
           {section.list && section.list.length > 0 ? (
             <ul className="text-muted-foreground list-disc space-y-2 pl-5 text-sm leading-relaxed sm:text-base">
-              {section.list.map((item) => (
-                <li key={item.slice(0, 48)}>{item}</li>
+              {section.list.map((item, index) => (
+                <li key={index}>{item}</li>
               ))}
             </ul>
           ) : null}
