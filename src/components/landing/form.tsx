@@ -13,6 +13,7 @@ import {
 	SelectValue,
 } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
+import { Link } from "@/i18n/navigation";
 import { ALLOWED_ROLES } from "@/utils/constants";
 
 export function LandingForm() {
@@ -212,7 +213,14 @@ export function LandingForm() {
 							</button>
 
 							<p className="text-muted-foreground/60 text-center text-xs">
-								{t("privacy")}
+								{t("privacyBefore")}
+								<Link
+									href="/privacy-policy"
+									className="text-muted-foreground hover:text-foreground underline underline-offset-2 transition-colors"
+								>
+									{t("privacyLink")}
+								</Link>
+								{t("privacyAfter")}
 							</p>
 						</form>
 					)}
