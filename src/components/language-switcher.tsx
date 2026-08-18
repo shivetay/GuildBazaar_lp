@@ -12,7 +12,7 @@ export function LanguageSwitcher() {
   const pathname = usePathname()
 
   return (
-    <div
+    <nav
       className="border-border bg-background/80 fixed top-4 right-4 z-50 flex items-center gap-1 rounded-sm border p-1 backdrop-blur-sm"
       aria-label={t('label')}
     >
@@ -21,6 +21,9 @@ export function LanguageSwitcher() {
           key={loc}
           href={pathname}
           locale={loc as Locale}
+          hrefLang={loc}
+          rel={locale === loc ? undefined : 'alternate'}
+          aria-current={locale === loc ? 'page' : undefined}
           className={cn(
             'font-display rounded-sm px-2.5 py-1 text-xs tracking-wider uppercase transition-colors',
             locale === loc
@@ -31,6 +34,6 @@ export function LanguageSwitcher() {
           {t(loc)}
         </Link>
       ))}
-    </div>
+    </nav>
   )
 }

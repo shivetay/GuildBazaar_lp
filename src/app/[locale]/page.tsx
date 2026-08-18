@@ -4,6 +4,7 @@ import { LandingFeatures } from '@/components/landing/features'
 import { PlatformShowcase } from '@/components/landing/platform-showcase'
 import { LandingForm } from '@/components/landing/form'
 import { LandingFooter } from '@/components/landing/footer'
+import { SiteJsonLd } from '@/components/seo/json-ld'
 import { routing } from '@/i18n/routing'
 
 type Props = {
@@ -15,13 +16,16 @@ export default async function LandingPage({ params }: Props) {
   setRequestLocale(locale)
 
   return (
-    <main className="bg-background min-h-screen">
-      <LandingHero />
-      <LandingFeatures />
-      <PlatformShowcase />
-      <LandingForm />
-      <LandingFooter />
-    </main>
+    <>
+      <SiteJsonLd locale={locale} />
+      <main className="bg-background min-h-screen">
+        <LandingHero />
+        <LandingFeatures />
+        <PlatformShowcase />
+        <LandingForm />
+        <LandingFooter />
+      </main>
+    </>
   )
 }
 

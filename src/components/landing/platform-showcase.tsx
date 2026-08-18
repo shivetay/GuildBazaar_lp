@@ -17,7 +17,7 @@ function BrowserFrame({ src, alt, slug }: { src: string; alt: string; slug: stri
         <span className="browser-frame-dot" />
         <span className="browser-frame-dot" />
         <span className="text-muted-foreground/60 ml-2 truncate font-mono text-[10px]">
-          guildbazaar.pl/{slug}
+          guildbazaar.com/{slug}
         </span>
       </div>
       <div className="bg-card relative aspect-[16/10] w-full">

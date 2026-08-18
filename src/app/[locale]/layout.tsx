@@ -5,6 +5,7 @@ import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server
 import { notFound } from 'next/navigation'
 import { LanguageSwitcher } from '@/components/language-switcher'
 import { routing } from '@/i18n/routing'
+import { generateLocalizedMetadata } from '@/lib/seo'
 import '../globals.css'
 
 const cinzel = Cinzel({
@@ -32,10 +33,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: 'Metadata' })
 
-  return {
+  return generateLocalizedMetadata({
+    locale,
+    href: '/',
     title: t('title'),
     description: t('description'),
-  }
+  })
 }
 
 export const viewport: Viewport = {

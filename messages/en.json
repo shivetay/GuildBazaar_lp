@@ -1,7 +1,7 @@
 {
   "Metadata": {
-    "title": "Guild Bazaar — Community for Re-enactors and LARP",
-    "description": "A platform for guilds, associations, artisans and vendors connected to historical re-enactment, LARP and cosplay."
+    "title": "Guild Bazaar — platform for re-enactors, LARP and cosplay",
+    "description": "A platform connecting guilds, associations, artisans and vendors. Community and marketplace for historical re-enactment, LARP and cosplay."
   },
   "LanguageSwitcher": {
     "label": "Language",
@@ -116,6 +116,7 @@
     "description": "A platform for historical re-enactors, LARPers and cosplayers. Guilds, craft and community in one place.",
     "copyright": "© 2026 Guild Bazaar",
     "beta": "Project in beta",
+    "navLabel": "Legal",
     "links": {
       "terms": "Terms",
       "privacy": "Privacy Policy",
@@ -128,9 +129,13 @@
     "lastUpdated": "Last updated: {date}",
     "meta": {
       "terms": "Terms of Service — Guild Bazaar",
+      "termsDescription": "Guild Bazaar terms of service — rules for using the platform for re-enactors, LARP and cosplay communities.",
       "privacy": "Privacy Policy — Guild Bazaar",
+      "privacyDescription": "Guild Bazaar privacy policy — how we process personal data of platform users.",
       "cookies": "Cookie Policy — Guild Bazaar",
-      "contact": "Contact — Guild Bazaar"
+      "cookiesDescription": "Guild Bazaar cookie policy — how we use cookies and how you can manage them.",
+      "contact": "Contact — Guild Bazaar",
+      "contactDescription": "Contact Guild Bazaar — provider details and reports related to the re-enactment, LARP and cosplay platform."
     }
   },
   "Common": {

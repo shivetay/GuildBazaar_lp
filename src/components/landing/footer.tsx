@@ -24,7 +24,7 @@ export async function LandingFooter() {
         </div>
         <p className="text-muted-foreground max-w-md text-sm leading-relaxed">{t('description')}</p>
         <nav
-          aria-label={tCommon('brand')}
+          aria-label={t('navLabel')}
           className="text-muted-foreground flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs"
         >
           {legalLinks.map((link) => (
