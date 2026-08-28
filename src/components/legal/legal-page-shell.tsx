@@ -1,14 +1,17 @@
-import { getLocale, getTranslations } from 'next-intl/server'
-import { Link } from '@/i18n/navigation'
 import { ArrowLeft } from 'lucide-react'
-import type { LegalDocument } from '@/content/legal/types'
+import { getLocale, getTranslations } from 'next-intl/server'
 import { LegalProse } from './legal-prose'
+import { LegalJsonLd } from '@/components/seo/json-ld'
+import type { LegalDocument } from '@/content/legal/types'
+import { Link } from '@/i18n/navigation'
+import type { Pathnames } from '@/i18n/routing'
 
 type Props = {
   document: LegalDocument
+  href: Pathnames
 }
 
-export async function LegalPageShell({ document }: Props) {
+export async function LegalPageShell({ document, href }: Props) {
   const t = await getTranslations('Legal')
   const locale = await getLocale()
 
@@ -20,6 +23,7 @@ export async function LegalPageShell({ document }: Props) {
 
   return (
     <main className="bg-background min-h-screen px-4 py-16 sm:py-20">
+      <LegalJsonLd locale={locale} href={href} name={document.title} />
       <article className="mx-auto max-w-3xl">
         <Link
           href="/"

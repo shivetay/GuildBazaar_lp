@@ -1,7 +1,7 @@
 {
   "Metadata": {
-    "title": "Guild Bazaar — Wspólnota Rekonstruktorów i LARP",
-    "description": "Platforma dla bractw, stowarzyszeń, rękodzielników i wystawców związanych z rekonstrukcjami historycznymi, LARP-em i cosplay."
+    "title": "Guild Bazaar — platforma dla rekonstruktorów, LARP i cosplay",
+    "description": "Platforma łącząca bractwa, stowarzyszenia, rękodzielników i wystawców. Społeczność i marketplace dla rekonstrukcji historycznej, LARP-u i cosplay."
   },
   "LanguageSwitcher": {
     "label": "Język",
@@ -116,6 +116,7 @@
     "description": "Platforma dla rekonstruktorów historycznych, LARPowiczów i cosplayerów. Bractwa, rękodzielnictwo i społeczność w jednym miejscu.",
     "copyright": "© 2026 Guild Bazaar",
     "beta": "Projekt w fazie beta",
+    "navLabel": "Informacje prawne",
     "links": {
       "terms": "Regulamin",
       "privacy": "Polityka prywatności",
@@ -128,9 +129,13 @@
     "lastUpdated": "Ostatnia aktualizacja: {date}",
     "meta": {
       "terms": "Regulamin — Guild Bazaar",
+      "termsDescription": "Regulamin serwisu Guild Bazaar — zasady korzystania z platformy dla rekonstruktorów, społeczności LARP i cosplay.",
       "privacy": "Polityka prywatności — Guild Bazaar",
+      "privacyDescription": "Polityka prywatności Guild Bazaar — informacje o przetwarzaniu danych osobowych użytkowników platformy.",
       "cookies": "Polityka cookies — Guild Bazaar",
-      "contact": "Kontakt — Guild Bazaar"
+      "cookiesDescription": "Polityka cookies Guild Bazaar — jak używamy plików cookie i jak możesz nimi zarządzać.",
+      "contact": "Kontakt — Guild Bazaar",
+      "contactDescription": "Kontakt z Guild Bazaar — dane usługodawcy oraz zgłoszenia dotyczące platformy dla rekonstruktorów, LARP i cosplay."
     }
   },
   "Common": {
