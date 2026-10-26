@@ -20,9 +20,7 @@ export const privacyPl: LegalDocument = {
     },
     {
       title: '3. Jakie dane zbieramy',
-      paragraphs: [
-        'W ramach formularza waitlist przetwarzamy:',
-      ],
+      paragraphs: ['W ramach formularza waitlist przetwarzamy:'],
       list: [
         'imię i nazwisko',
         'adres e-mail',
@@ -39,7 +37,7 @@ export const privacyPl: LegalDocument = {
         'zapis na listę oczekujących i kontakt w sprawie startu / beta — art. 6 ust. 1 lit. b RODO (działania przedumowne / wykonanie żądania) lub lit. f (prawnie uzasadniony interes Administratora polegający na budowie społeczności produktu),',
         'odpowiedzi na zapytania kontaktowe — art. 6 ust. 1 lit. f RODO,',
         'obowiązki prawne Administratora (np. rozliczenia, gdy pojawią się płatności) — art. 6 ust. 1 lit. c RODO,',
-        'wysyłka wiadomości e-mail z informacją o starcie platformy i zaproszeniem do beta-testów — na podstawie Twojej zgody (art. 6 ust. 1 lit. a RODO oraz art. 398 ustawy Prawo komunikacji elektronicznej), wyrażonej w formularzu i potwierdzonej linkiem z wiadomości e-mail. Zgodę możesz wycofać w każdej chwili, kontaktując się z Administratorem; wycofanie nie wpływa na zgodność z prawem przetwarzania sprzed wycofania.',
+        'wysyłka wiadomości e-mail z informacją o starcie platformy i zaproszeniem do beta-testów — na podstawie Twojej zgody (art. 6 ust. 1 lit. a RODO oraz art. 398 ustawy Prawo komunikacji elektronicznej), wyrażonej w formularzu i potwierdzonej linkiem z wiadomości e-mail. Zgodę możesz wycofać w każdej chwili — linkiem „Usuń zgłoszenie” z każdej naszej wiadomości albo pisząc na kontakt@guildbazaar.com; wycofanie nie wpływa na zgodność z prawem przetwarzania sprzed wycofania.',
       ],
     },
     {
@@ -55,6 +53,7 @@ export const privacyPl: LegalDocument = {
     {
       title: '6. Okres przechowywania',
       paragraphs: [
+        'Zgłoszenia niepotwierdzone linkiem z wiadomości e-mail usuwamy automatycznie po 30 dniach od zapisu.',
         'Dane z waitlist przechowujemy do czasu uruchomienia platformy i poinformowania zapisanych osób albo do czasu skutecznego żądania usunięcia / sprzeciwu — nie dłużej niż jest to potrzebne do celu zapisu, a następnie przez okres niezbędny do ustalenia, dochodzenia lub obrony roszczeń, jeżeli dotyczy.',
       ],
     },
@@ -62,7 +61,7 @@ export const privacyPl: LegalDocument = {
       title: '7. Prawa osoby, której dane dotyczą',
       paragraphs: [
         'Przysługuje Ci prawo dostępu do danych, sprostowania, usunięcia, ograniczenia przetwarzania, przenoszenia danych (w zakresie przewidzianym RODO), sprzeciwu wobec przetwarzania opartego na art. 6 ust. 1 lit. f RODO oraz prawo wniesienia skargi do Prezesa UODO.',
-        'Aby skorzystać z praw, napisz na: kontakt@guildbazaar.com.',
+        'Aby skorzystać z praw, napisz na: kontakt@guildbazaar.com. Usunięcie zgłoszenia możesz też zlecić samodzielnie linkiem „Usuń zgłoszenie” w każdej naszej wiadomości.',
       ],
     },
     {

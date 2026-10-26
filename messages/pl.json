@@ -156,5 +156,16 @@
     "invalidTitle": "Link wygasł lub jest nieprawidłowy",
     "invalidText": "Link potwierdzający jest ważny 7 dni. Wyślij formularz ponownie, a dostaniesz nowy.",
     "back": "Wróć na stronę główną"
+  },
+  "Unsubscribe": {
+    "metaTitle": "Usunięcie zgłoszenia",
+    "pendingTitle": "Usunąć zgłoszenie z listy?",
+    "pendingText": "Po kliknięciu usuniemy Twoje dane z listy oczekujących Guild Bazaar i wycofamy zgodę na wiadomości. Nie wyślemy Ci już żadnego maila.",
+    "button": "Usuń moje zgłoszenie",
+    "deletedTitle": "Zgłoszenie usunięte",
+    "deletedText": "Twoje dane zostały usunięte z listy oczekujących, a zgoda wycofana. Jeśli zmienisz zdanie, możesz zapisać się ponownie na stronie głównej.",
+    "invalidTitle": "Link nieaktywny",
+    "invalidText": "Ten link nie działa — zgłoszenie mogło zostać już usunięte albo użyto linku ze starszej wiadomości. W razie pytań napisz na kontakt@guildbazaar.com.",
+    "back": "Wróć na stronę główną"
   }
 }

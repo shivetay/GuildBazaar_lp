@@ -156,5 +156,16 @@
     "invalidTitle": "Link expired or invalid",
     "invalidText": "Confirmation links are valid for 7 days. Submit the form again to get a new one.",
     "back": "Back to the home page"
+  },
+  "Unsubscribe": {
+    "metaTitle": "Remove your signup",
+    "pendingTitle": "Remove your signup?",
+    "pendingText": "Clicking the button deletes your details from the Guild Bazaar waitlist and withdraws your consent to emails. We will not email you again.",
+    "button": "Remove my signup",
+    "deletedTitle": "Signup removed",
+    "deletedText": "Your details have been deleted from the waitlist and your consent withdrawn. If you change your mind, you can sign up again on the home page.",
+    "invalidTitle": "Link inactive",
+    "invalidText": "This link does not work — your signup may already be removed, or the link comes from an older email. Questions? Write to kontakt@guildbazaar.com.",
+    "back": "Back to the home page"
   }
 }

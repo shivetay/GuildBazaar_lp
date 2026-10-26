@@ -37,7 +37,7 @@ export const privacyEn: LegalDocument = {
         'waitlist signup and contact about launch / beta — Art. 6(1)(b) GDPR (pre-contractual steps) or Art. 6(1)(f) (legitimate interest in building the product community),',
         'responding to contact requests — Art. 6(1)(f) GDPR,',
         'legal obligations of the Controller (e.g. accounting when payments appear) — Art. 6(1)(c) GDPR,',
-        'emails about the platform launch and an invitation to beta tests — based on your consent (Art. 6(1)(a) GDPR and Art. 398 of the Polish Electronic Communications Law), given in the form and confirmed via the link in our email. You can withdraw consent at any time by contacting the Controller; withdrawal does not affect the lawfulness of processing before it.',
+        'emails about the platform launch and an invitation to beta tests — based on your consent (Art. 6(1)(a) GDPR and Art. 398 of the Polish Electronic Communications Law), given in the form and confirmed via the link in our email. You can withdraw consent at any time — via the “Remove your signup” link in any of our emails or by writing to kontakt@guildbazaar.com; withdrawal does not affect the lawfulness of processing before it.',
       ],
     },
     {
@@ -46,13 +46,14 @@ export const privacyEn: LegalDocument = {
         'Waitlist data is stored with our database infrastructure provider — Supabase.',
         'We send emails (including the confirmation link) through Resend (Resend, Inc.), which receives your email address, name and the message content as needed to deliver it.',
         'The site may be hosted by a cloud provider (e.g. Vercel), which then processes technical data necessary to deliver the site.',
-        'We measure traffic with Vercel Web Analytics. It uses no cookies and does not store IP addresses — it counts page views using an anonymised identifier that changes daily, plus aggregate data (e.g. page visited, referrer, country, device and browser type). Legal basis: Art. 6(1)(f) GDPR (legitimate interest in understanding the site\'s reach).',
+        "We measure traffic with Vercel Web Analytics. It uses no cookies and does not store IP addresses — it counts page views using an anonymised identifier that changes daily, plus aggregate data (e.g. page visited, referrer, country, device and browser type). Legal basis: Art. 6(1)(f) GDPR (legitimate interest in understanding the site's reach).",
         'Google Ads scripts are not currently implemented. If we add them later, we will update this Policy and, if needed, the Cookie Policy.',
       ],
     },
     {
       title: '6. Retention',
       paragraphs: [
+        'Signups not confirmed via the emailed link are deleted automatically 30 days after signing up.',
         'We keep waitlist data until the platform launches and signed-up persons are informed, or until a valid erasure / objection request — no longer than needed for the signup purpose, and then for any period needed to establish, exercise or defend legal claims, if applicable.',
       ],
     },
@@ -60,7 +61,7 @@ export const privacyEn: LegalDocument = {
       title: '7. Your rights',
       paragraphs: [
         'You have the right of access, rectification, erasure, restriction, data portability (as provided by the GDPR), objection to processing based on Art. 6(1)(f) GDPR, and the right to lodge a complaint with a supervisory authority (in Poland: the President of UODO).',
-        'To exercise your rights, email: kontakt@guildbazaar.com.',
+        'To exercise your rights, email: kontakt@guildbazaar.com. You can also delete your signup yourself via the “Remove your signup” link in any of our emails.',
       ],
     },
     {
@@ -73,7 +74,7 @@ export const privacyEn: LegalDocument = {
       title: '9. Transfers outside the EEA',
       paragraphs: [
         'Some technical providers may process data outside the European Economic Area. Where required, we use GDPR transfer mechanisms (e.g. standard contractual clauses).',
-        'Resend, Inc. is a US company. We send emails from its EU region, but the provider may access data from the US — under standard contractual clauses or the European Commission\'s EU-US Data Privacy Framework decision.',
+        "Resend, Inc. is a US company. We send emails from its EU region, but the provider may access data from the US — under standard contractual clauses or the European Commission's EU-US Data Privacy Framework decision.",
       ],
     },
     {

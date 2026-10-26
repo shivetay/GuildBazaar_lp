@@ -25,6 +25,10 @@ export const routing = defineRouting({
       pl: '/potwierdz',
       en: '/confirm',
     },
+    '/unsubscribe': {
+      pl: '/wypisz',
+      en: '/unsubscribe',
+    },
   },
 })
 
