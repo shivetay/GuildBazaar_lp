@@ -7,8 +7,8 @@ export const privacyEn: LegalDocument = {
     {
       title: '1. Data controller',
       paragraphs: [
-        'The controller of personal data is Łukasz Dawidowicz, conducting business as FSP Łukasz Dawidowicz, address: [ADDRESS – TO BE COMPLETED], NIP: [NIP – TO BE COMPLETED], REGON: [REGON – TO BE COMPLETED] (the “Controller”).',
-        'Data protection contact: [EMAIL – TO BE COMPLETED].',
+        'The controller of personal data is Łukasz Dawidowicz, conducting business as FSP Łukasz Dawidowicz, address: ul. Dworska 8D, 51-361 Wilczyce, Poland, NIP: 6922391957, REGON: 524775528 (the “Controller”).',
+        'Data protection contact: kontakt@guildbazaar.com.',
       ],
     },
     {
@@ -60,7 +60,7 @@ export const privacyEn: LegalDocument = {
       title: '7. Your rights',
       paragraphs: [
         'You have the right of access, rectification, erasure, restriction, data portability (as provided by the GDPR), objection to processing based on Art. 6(1)(f) GDPR, and the right to lodge a complaint with a supervisory authority (in Poland: the President of UODO).',
-        'To exercise your rights, email: [EMAIL – TO BE COMPLETED].',
+        'To exercise your rights, email: kontakt@guildbazaar.com.',
       ],
     },
     {

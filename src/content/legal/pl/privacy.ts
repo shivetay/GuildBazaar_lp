@@ -7,8 +7,8 @@ export const privacyPl: LegalDocument = {
     {
       title: '1. Administrator danych',
       paragraphs: [
-        'Administratorem danych osobowych jest Łukasz Dawidowicz, prowadzący działalność pod firmą FSP Łukasz Dawidowicz, adres: [ADRES – UZUPEŁNIĆ], NIP: [NIP – UZUPEŁNIĆ], REGON: [REGON – UZUPEŁNIĆ] (dalej: „Administrator”).',
-        'Kontakt w sprawach ochrony danych: [E-MAIL – UZUPEŁNIĆ].',
+        'Administratorem danych osobowych jest Łukasz Dawidowicz, prowadzący działalność pod firmą FSP Łukasz Dawidowicz, adres: ul. Dworska 8D, 51-361 Wilczyce, NIP: 6922391957, REGON: 524775528 (dalej: „Administrator”).',
+        'Kontakt w sprawach ochrony danych: kontakt@guildbazaar.com.',
       ],
     },
     {
@@ -62,7 +62,7 @@ export const privacyPl: LegalDocument = {
       title: '7. Prawa osoby, której dane dotyczą',
       paragraphs: [
         'Przysługuje Ci prawo dostępu do danych, sprostowania, usunięcia, ograniczenia przetwarzania, przenoszenia danych (w zakresie przewidzianym RODO), sprzeciwu wobec przetwarzania opartego na art. 6 ust. 1 lit. f RODO oraz prawo wniesienia skargi do Prezesa UODO.',
-        'Aby skorzystać z praw, napisz na: [E-MAIL – UZUPEŁNIĆ].',
+        'Aby skorzystać z praw, napisz na: kontakt@guildbazaar.com.',
       ],
     },
     {

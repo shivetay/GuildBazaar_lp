@@ -2,30 +2,30 @@ import type { LegalDocument } from '../types'
 
 export const contactPl: LegalDocument = {
   title: 'Kontakt',
-  updatedAt: '2026-08-04',
+  updatedAt: '2026-10-26',
   sections: [
     {
       title: 'Dane Usługodawcy',
       paragraphs: [
         'FSP Łukasz Dawidowicz',
-        'Adres: [ADRES – UZUPEŁNIĆ]',
-        'NIP: [NIP – UZUPEŁNIĆ]',
-        'REGON: [REGON – UZUPEŁNIĆ]',
+        'Adres: ul. Dworska 8D, 51-361 Wilczyce',
+        'NIP: 6922391957',
+        'REGON: 524775528',
       ],
     },
     {
       title: 'Kontakt ogólny',
       paragraphs: [
-        'E-mail: [E-MAIL – UZUPEŁNIĆ]',
-        'Telefon: [NUMER TELEFONU – UZUPEŁNIĆ]',
-        'Poczta tradycyjna: [ADRES – UZUPEŁNIĆ]',
+        'E-mail: kontakt@guildbazaar.com',
+        'Telefon: +48 697 449 932',
+        'Poczta tradycyjna: ul. Dworska 8D, 51-361 Wilczyce',
       ],
     },
     {
       title: 'Punkt kontaktowy DSA',
       paragraphs: [
         'Punkt kontaktowy do komunikacji z organami państw członkowskich UE, Komisją Europejską, Radą ds. Usług Cyfrowych oraz Usługobiorcami w sprawach objętych DSA:',
-        '[E-MAIL KONTAKTOWY DSA – UZUPEŁNIĆ]',
+        'kontakt@guildbazaar.com',
       ],
     },
     {

@@ -2,7 +2,7 @@ import type { LegalDocument } from '../types'
 
 export const termsPl: LegalDocument = {
   title: 'Regulamin aplikacji GuildBazaar',
-  updatedAt: '2026-08-04',
+  updatedAt: '2026-10-26',
   sections: [
     {
       title: '§ 1. Postanowienia ogólne',
@@ -11,9 +11,9 @@ export const termsPl: LegalDocument = {
         'Obecnie Usługodawca udostępnia publicznie stronę informacyjną (landing page) oraz formularz listy oczekujących (waitlist). Pełna platforma GuildBazaar — obejmująca konta użytkowników, profile grup rekonstrukcyjnych oraz agregację ofert — zostanie uruchomiona w późniejszym terminie. Postanowienia dotyczące planowanych funkcjonalności stosuje się odpowiednio od chwili ich udostępnienia.',
         'Aplikacja służy do agregacji i prezentacji ofert związanych ze środowiskiem rzemieślniczym, rekonstrukcyjnym i LARP, umożliwiania tworzenia Kont użytkowników oraz profili grup rekonstrukcyjnych, a także do umożliwienia kontaktu z wystawcami ofert. Aplikacja nie prowadzi sprzedaży towarów ani usług prezentowanych w ofertach i nie jest sklepem internetowym — transakcje oraz ich warunki, w tym ceny, ustalane są bezpośrednio pomiędzy Usługobiorcami poza Aplikacją. Aplikacja jest przeznaczona zarówno dla przedsiębiorców, jak i konsumentów.',
         'Regulamin jest regulaminem, o którym mowa w art. 8 ustawy z dnia 18 lipca 2002 r. o świadczeniu usług drogą elektroniczną.',
-        'Dostawcą usług jest Łukasz Dawidowicz, prowadzący działalność pod firmą FSP Łukasz Dawidowicz (adres stałego miejsca wykonywania działalności gospodarczej: ul. [ADRES – UZUPEŁNIĆ]), wpisany do Centralnej Ewidencji Informacji o Działalności Gospodarczej prowadzonej przez ministra właściwego ds. gospodarki, posiadający NIP: [NUMER NIP – UZUPEŁNIĆ], numer REGON: [NUMER REGON – UZUPEŁNIĆ] (dalej: „Usługodawca”).',
-        'Kontakt z Usługodawcą jest możliwy za pomocą: poczty elektronicznej — pod adresem: [E-MAIL – UZUPEŁNIĆ]; poczty tradycyjnej — pod adresem: [ADRES – UZUPEŁNIĆ]; telefonu — pod numerem: [NUMER TELEFONU – UZUPEŁNIĆ].',
-        'Zgodnie z DSA Usługodawca wyznaczył punkt kontaktowy dostępny pod adresem: [E-MAIL KONTAKTOWY DSA – UZUPEŁNIĆ].',
+        'Dostawcą usług jest Łukasz Dawidowicz, prowadzący działalność pod firmą FSP Łukasz Dawidowicz (adres stałego miejsca wykonywania działalności gospodarczej: ul. Dworska 8D, 51-361 Wilczyce), wpisany do Centralnej Ewidencji Informacji o Działalności Gospodarczej prowadzonej przez ministra właściwego ds. gospodarki, posiadający NIP: 6922391957, numer REGON: 524775528 (dalej: „Usługodawca”).',
+        'Kontakt z Usługodawcą jest możliwy za pomocą: poczty elektronicznej — pod adresem: kontakt@guildbazaar.com; poczty tradycyjnej — pod adresem: ul. Dworska 8D, 51-361 Wilczyce; telefonu — pod numerem: +48 697 449 932.',
+        'Zgodnie z DSA Usługodawca wyznaczył punkt kontaktowy dostępny pod adresem: kontakt@guildbazaar.com.',
         'Przed rozpoczęciem korzystania z Aplikacji Usługobiorca zobowiązany jest zapoznać się z Regulaminem oraz Polityką prywatności.',
       ],
     },
@@ -63,7 +63,7 @@ export const termsPl: LegalDocument = {
     {
       title: '§ 6. Cennik',
       paragraphs: [
-        'Aktualny Cennik będzie dostępny w Aplikacji pod adresem wskazanym po uruchomieniu funkcji płatnych: [LINK DO CENNIKA – UZUPEŁNIĆ].',
+        'Aktualny Cennik zostanie opublikowany w Aplikacji wraz z uruchomieniem funkcji płatnych.',
         'Cennik może przewidywać nieodpłatne korzystanie z określonych funkcjonalności. Zmiana Cennika nie wpływa na opłaty wynikające z umów zawartych przed zmianą.',
       ],
     },
@@ -79,7 +79,7 @@ export const termsPl: LegalDocument = {
       title: '§ 10. Treści i Opinie Usługobiorcy',
       paragraphs: [
         'Zabronione jest umieszczanie treści niezgodnych z prawem, naruszających dobra osobiste, prawa autorskie, nawołujących do przemocy lub nienawiści oraz treści promujących działalność konkurencyjną wobec Usługodawcy — z zastrzeżeniem treści ofert i profili publikowanych zgodnie z przeznaczeniem Aplikacji.',
-        'Każda osoba może zgłosić nielegalną lub naruszającą Regulamin treść e-mailem na adres: [E-MAIL KONTAKTOWY – UZUPEŁNIĆ]. Zgłoszenie powinno zawierać uzasadnienie, lokalizację URL treści, dane Zgłaszającego oraz oświadczenie o dobrej wierze.',
+        'Każda osoba może zgłosić nielegalną lub naruszającą Regulamin treść e-mailem na adres: kontakt@guildbazaar.com. Zgłoszenie powinno zawierać uzasadnienie, lokalizację URL treści, dane Zgłaszającego oraz oświadczenie o dobrej wierze.',
         'Usługodawca weryfikuje zgłoszenie w terminie 14 dni i może usunąć, zablokować lub przywrócić treść, podając uzasadnienie. Od decyzji przysługuje odwołanie w terminie i trybie wskazanym w odpowiedzi Usługodawcy.',
         'Publikacja Treści Usługobiorcy jest równoznaczna z udzieleniem Usługodawcy niewyłącznej, nieodpłatnej licencji na wykorzystanie treści w celu świadczenia Usługi oraz w materiałach promocyjnych Usługodawcy.',
       ],

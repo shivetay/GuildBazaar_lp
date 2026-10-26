@@ -45,7 +45,7 @@ export const cookiesEn: LegalDocument = {
     {
       title: '6. More information',
       paragraphs: [
-        'Details on personal data processing are in the Privacy Policy. Contact: [EMAIL – TO BE COMPLETED].',
+        'Details on personal data processing are in the Privacy Policy. Contact: kontakt@guildbazaar.com.',
         'If there is any conflict between the Polish and English versions, the Polish version prevails.',
       ],
     },
