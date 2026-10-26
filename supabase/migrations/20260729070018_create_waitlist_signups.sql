@@ -1,6 +1,6 @@
 -- Waitlist signups from the landing page form (src/app/actions/waitlist.ts).
--- Idempotent: safe to run on a project where the table was created by hand
--- from form.md (existing constraints on an existing table are left as they are).
+-- Version matches the migration already recorded on prod (2026-07-29). Idempotent,
+-- so it is also safe on projects where the table was created by hand.
 
 create table if not exists public.waitlist_signups (
   id uuid primary key default gen_random_uuid(),
