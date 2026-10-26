@@ -2,6 +2,7 @@ import { setRequestLocale } from 'next-intl/server'
 import { LandingHero } from '@/components/landing/hero'
 import { LandingFeatures } from '@/components/landing/features'
 import { PlatformShowcase } from '@/components/landing/platform-showcase'
+import { LandingFaq } from '@/components/landing/faq'
 import { LandingForm } from '@/components/landing/form'
 import { LandingFooter } from '@/components/landing/footer'
 import { SiteJsonLd } from '@/components/seo/json-ld'
@@ -22,6 +23,7 @@ export default async function LandingPage({ params }: Props) {
         <LandingHero />
         <LandingFeatures />
         <PlatformShowcase />
+        <LandingFaq />
         <LandingForm />
         <LandingFooter />
       </main>

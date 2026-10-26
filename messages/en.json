@@ -80,6 +80,49 @@
       }
     }
   },
+  "Faq": {
+    "eyebrow": "FAQ",
+    "title": "Frequently asked questions",
+    "subtitle": "Everything worth knowing about Guild Bazaar before launch.",
+    "items": {
+      "about": {
+        "question": "What is Guild Bazaar?",
+        "answer": "Guild Bazaar is a Polish platform for historical re-enactors, LARPers and cosplayers. It brings knightly guilds, re-enactment groups, artisans, vendors and event organisers together in one place. It also brings their handmade work to a wider audience, not just people from the scene."
+      },
+      "audience": {
+        "question": "Who is the platform for?",
+        "answer": "The whole historical and fantasy scene: guild and association members, artisans (armourers, blacksmiths, tailors, leatherworkers), fair vendors and festival organisers. And anyone looking for unique handmade items, a costume or a gift with a story behind it."
+      },
+      "groups": {
+        "question": "How do I find a re-enactment group?",
+        "answer": "Browse guild and association profiles from all over Poland and filter them by era, location and specialisation. You can contact a group directly through the platform."
+      },
+      "sell": {
+        "question": "Can I sell my handmade work?",
+        "answer": "Yes. Artisans and vendors create a workshop profile and list armour, costumes, props, jewellery or made-to-order services. Your work will be seen not only by re-enactors but also by buyers outside the community. Buyers contact you directly and you agree the details between yourselves."
+      },
+      "price": {
+        "question": "Is Guild Bazaar free?",
+        "answer": "Yes, the platform is free to use and funded by ads. Extra promotion options for vendor profiles and listings may be added in the future."
+      },
+      "launch": {
+        "question": "When does Guild Bazaar launch?",
+        "answer": "The platform is in development. Everyone on the waitlist will get an email before the official launch, with an invitation to the beta."
+      },
+      "waitlist": {
+        "question": "How do I join the waitlist?",
+        "answer": "Fill in the form on this page and click the link in the confirmation email (valid for 7 days). You can unsubscribe at any time."
+      },
+      "epochs": {
+        "question": "Is it only about the Middle Ages?",
+        "answer": "No. Guild Bazaar covers every era and style: from antiquity and the Middle Ages, through the Renaissance and militaria, to fantasy, LARP and cosplay."
+      },
+      "buyers": {
+        "question": "Do I have to be a re-enactor to buy something?",
+        "answer": "No. Guild Bazaar is open to everyone. You'll find handmade costumes, jewellery, decorative weapons, props and décor, perfect as a gift, for a collection or for a costume party."
+      }
+    }
+  },
   "Form": {
     "eyebrow": "Express your interest",
     "title": "Join the waitlist",
