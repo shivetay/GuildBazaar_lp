@@ -17,6 +17,7 @@ const TEMPLATES: Record<Locale, string> = {
 }
 
 export type ConfirmState = 'pending' | 'confirmed' | 'already' | 'invalid'
+export type UnsubscribeState = 'pending' | 'deleted' | 'invalid'
 
 function hashToken(token: string) {
   return createHash('sha256').update(token).digest('hex')
@@ -35,7 +36,13 @@ async function getBaseUrl() {
   return SITE_URL
 }
 
-async function sendConfirmationEmail(to: string, name: string, locale: Locale, confirmUrl: string) {
+async function sendConfirmationEmail(
+  to: string,
+  name: string,
+  locale: Locale,
+  confirmUrl: string,
+  unsubscribeUrl: string,
+) {
   const apiKey = process.env.RESEND_API_KEY
   if (!apiKey) {
     console.warn('waitlist confirmation skipped: RESEND_API_KEY not set')
@@ -50,7 +57,7 @@ async function sendConfirmationEmail(to: string, name: string, locale: Locale, c
       to: [to],
       template: {
         id: TEMPLATES[locale],
-        variables: { NAME: name, CONFIRM_URL: confirmUrl },
+        variables: { NAME: name, CONFIRM_URL: confirmUrl, UNSUBSCRIBE_URL: unsubscribeUrl },
       },
     }),
   })
@@ -73,12 +80,15 @@ export async function issueConfirmation(email: string) {
   }
 
   const token = randomBytes(32).toString('base64url')
+  // a fresh unsubscribe link with every e-mail; links from older e-mails stop working
+  const manageToken = randomBytes(32).toString('base64url')
   const cooldownStart = new Date(Date.now() - RESEND_COOLDOWN_MS).toISOString()
 
   const { data, error } = await supabase
     .from('waitlist_signups')
     .update({
       confirm_token_hash: hashToken(token),
+      manage_token_hash: hashToken(manageToken),
       confirm_sent_at: new Date().toISOString(),
       // re-submitting the form renews consent with the current wording
       consent_version: CONSENT_VERSION,
@@ -97,8 +107,10 @@ export async function issueConfirmation(email: string) {
   if (!data) return
 
   const locale = toLocale(data.locale)
-  const confirmUrl = `${await getBaseUrl()}${getLocalizedPath('/confirm', locale)}?token=${token}`
-  await sendConfirmationEmail(email, data.name, locale, confirmUrl)
+  const baseUrl = await getBaseUrl()
+  const confirmUrl = `${baseUrl}${getLocalizedPath('/confirm', locale)}?token=${token}`
+  const unsubscribeUrl = `${baseUrl}${getLocalizedPath('/unsubscribe', locale)}?token=${manageToken}`
+  await sendConfirmationEmail(email, data.name, locale, confirmUrl, unsubscribeUrl)
 }
 
 async function findByToken(token: string) {
@@ -144,4 +156,37 @@ export async function confirmSignup(token: string): Promise<ConfirmState> {
     return 'invalid'
   }
   return 'confirmed'
+}
+
+// Read-only check for the unsubscribe page; deletion needs a click (POST),
+// for the same link-scanner reason as confirmation
+export async function getUnsubscribeState(token: string): Promise<UnsubscribeState> {
+  const supabase = createAdminClient()
+  if (!supabase || !token) return 'invalid'
+
+  const { data } = await supabase
+    .from('waitlist_signups')
+    .select('id')
+    .eq('manage_token_hash', hashToken(token))
+    .maybeSingle()
+
+  return data ? 'pending' : 'invalid'
+}
+
+// Withdraws consent and erases the signup in one step
+export async function unsubscribeSignup(token: string): Promise<UnsubscribeState> {
+  const supabase = createAdminClient()
+  if (!supabase || !token) return 'invalid'
+
+  const { data, error } = await supabase
+    .from('waitlist_signups')
+    .delete()
+    .eq('manage_token_hash', hashToken(token))
+    .select('id')
+
+  if (error) {
+    console.error('waitlist unsubscribe failed', error.message)
+    return 'invalid'
+  }
+  return data.length > 0 ? 'deleted' : 'invalid'
 }
