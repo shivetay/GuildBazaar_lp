@@ -2,7 +2,7 @@ import type { LegalDocument } from '../types'
 
 export const cookiesEn: LegalDocument = {
   title: 'Cookie Policy',
-  updatedAt: '2026-08-04',
+  updatedAt: '2026-10-26',
   sections: [
     {
       title: '1. What cookies are',
@@ -24,7 +24,8 @@ export const cookiesEn: LegalDocument = {
     {
       title: '3. Marketing and analytics cookies',
       paragraphs: [
-        'We do not currently deploy marketing cookies (e.g. Google Ads) or dedicated analytics scripts (e.g. Vercel Analytics) on this site.',
+        'We do not currently deploy marketing cookies (e.g. Google Ads).',
+        'We measure traffic with Vercel Web Analytics, which works without cookies and stores nothing on your device.',
         'If we add such technologies later, we will update this Policy and — where required by law — implement a consent mechanism.',
       ],
     },

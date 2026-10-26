@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import { Cinzel, EB_Garamond } from 'next/font/google'
 import { NextIntlClientProvider } from 'next-intl'
@@ -69,6 +70,7 @@ export default async function LocaleLayout({ children, params }: Props) {
           <LanguageSwitcher />
           {children}
         </NextIntlClientProvider>
+        <Analytics />
       </body>
     </html>
   )

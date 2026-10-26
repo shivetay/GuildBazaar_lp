@@ -84,8 +84,8 @@
     "eyebrow": "Express your interest",
     "title": "Join the waitlist",
     "subtitle": "Leave your details — we will contact you before the official platform launch.",
-    "successTitle": "Thank you for your interest!",
-    "successMessage": "We saved your details. We will notify you about the launch and invite you to beta tests.",
+    "successTitle": "Check your inbox",
+    "successMessage": "We sent you an email with a confirmation link. Click it within 7 days to join the waitlist. No email? Check your spam folder or submit the form again.",
     "nameLabel": "Full name *",
     "namePlaceholder": "John Smith",
     "emailLabel": "Email address *",
@@ -98,7 +98,6 @@
     "privacyBefore": "By submitting this form, you accept our ",
     "privacyLink": "Privacy Policy",
     "privacyAfter": ". We use your data only to contact you about the platform launch.",
-    "errorDuplicate": "This email is already on the waitlist.",
     "errorValidation": "Please check the form fields.",
     "errorRateLimited": "Too many signups right now. Please try again in a few minutes.",
     "errorServer": "Could not save your signup. Please try again shortly.",
@@ -111,7 +110,10 @@
       "vendor": "Vendor / Seller",
       "association": "Guild / association representative",
       "organizer": "Event organizer"
-    }
+    },
+    "consentLabel": "I agree to receive emails from Guild Bazaar about the platform launch and an invitation to beta tests. I can withdraw my consent at any time. Details in our",
+    "consentPrivacyLink": "Privacy Policy",
+    "errorConsent": "Please tick the consent box to join the waitlist."
   },
   "Footer": {
     "description": "A platform for historical re-enactors, LARPers and cosplayers. Guilds, craft and community in one place.",
@@ -141,5 +143,18 @@
   },
   "Common": {
     "brand": "Guild Bazaar"
+  },
+  "Confirm": {
+    "metaTitle": "Confirm your signup",
+    "pendingTitle": "Confirm your signup",
+    "pendingText": "Click the button below to confirm your email address and join the Guild Bazaar waitlist.",
+    "button": "Confirm my signup",
+    "confirmedTitle": "Signup confirmed!",
+    "confirmedText": "Thank you! You are on the waitlist. We will email you before the platform launches.",
+    "alreadyTitle": "Already confirmed",
+    "alreadyText": "This email address is already on the waitlist. There is nothing else to do.",
+    "invalidTitle": "Link expired or invalid",
+    "invalidText": "Confirmation links are valid for 7 days. Submit the form again to get a new one.",
+    "back": "Back to the home page"
   }
 }

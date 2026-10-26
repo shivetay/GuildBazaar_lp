@@ -14,6 +14,7 @@ import {
 } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 import { Link } from "@/i18n/navigation";
+import { type Attribution, captureAttribution } from "@/lib/attribution";
 import { ALLOWED_ROLES } from "@/utils/constants";
 
 export function LandingForm() {
@@ -30,10 +31,13 @@ export function LandingForm() {
 	});
 	// Honeypot value and mount time, checked by the server action
 	const [website, setWebsite] = useState("");
+	const [consent, setConsent] = useState(false);
 	const startedAt = useRef(0);
+	const attribution = useRef<Attribution>({});
 
 	useEffect(() => {
 		startedAt.current = Date.now();
+		attribution.current = captureAttribution();
 	}, []);
 
 	function handleSubmit(e: React.FormEvent) {
@@ -50,6 +54,8 @@ export function LandingForm() {
 					locale,
 					website,
 					startedAt: startedAt.current,
+					attribution: attribution.current,
+					consent,
 				});
 
 				if (result.ok) {
@@ -57,8 +63,8 @@ export function LandingForm() {
 					return;
 				}
 
-				if (result.error === "duplicate") {
-					setError(t("errorDuplicate"));
+				if (result.error === "consent") {
+					setError(t("errorConsent"));
 				} else if (result.error === "rate_limited") {
 					setError(t("errorRateLimited"));
 				} else if (result.error === "validation") {
@@ -215,6 +221,31 @@ export function LandingForm() {
 									className="border-border bg-input focus:border-primary/60 resize-none leading-relaxed"
 								/>
 							</div>
+
+							<label
+								htmlFor="consent"
+								className="text-muted-foreground flex items-start gap-3 text-sm leading-relaxed"
+							>
+								<input
+									id="consent"
+									type="checkbox"
+									required
+									disabled={pending}
+									checked={consent}
+									onChange={(e) => setConsent(e.target.checked)}
+									className="accent-primary mt-1 h-4 w-4 shrink-0"
+								/>
+								<span>
+									{t("consentLabel")}{" "}
+									<Link
+										href="/privacy-policy"
+										className="hover:text-foreground underline underline-offset-2 transition-colors"
+									>
+										{t("consentPrivacyLink")}
+									</Link>
+									.
+								</span>
+							</label>
 
 							{error ? (
 								<p

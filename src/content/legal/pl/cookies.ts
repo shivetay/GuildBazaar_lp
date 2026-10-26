@@ -2,7 +2,7 @@ import type { LegalDocument } from '../types'
 
 export const cookiesPl: LegalDocument = {
   title: 'Polityka cookies',
-  updatedAt: '2026-08-04',
+  updatedAt: '2026-10-26',
   sections: [
     {
       title: '1. Czym są cookies',
@@ -24,7 +24,8 @@ export const cookiesPl: LegalDocument = {
     {
       title: '3. Cookies marketingowe i analityczne',
       paragraphs: [
-        'Obecnie nie wdrażamy cookies marketingowych (np. Google Ads) ani dedykowanych skryptów analitycznych (np. Vercel Analytics) na tej stronie.',
+        'Obecnie nie wdrażamy cookies marketingowych (np. Google Ads).',
+        'Do pomiaru ruchu używamy Vercel Web Analytics, które działa bez cookies i bez zapisywania danych na Twoim urządzeniu.',
         'Jeśli w przyszłości dodamy takie technologie, zaktualizujemy tę Politykę i — w razie wymogu prawa — wdrożymy mechanizm zgody.',
       ],
     },
