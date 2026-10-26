@@ -2,30 +2,30 @@ import type { LegalDocument } from '../types'
 
 export const contactEn: LegalDocument = {
   title: 'Contact',
-  updatedAt: '2026-08-04',
+  updatedAt: '2026-10-26',
   sections: [
     {
       title: 'Provider details',
       paragraphs: [
         'FSP Łukasz Dawidowicz',
-        'Address: [ADDRESS – TO BE COMPLETED]',
-        'NIP: [NIP – TO BE COMPLETED]',
-        'REGON: [REGON – TO BE COMPLETED]',
+        'Address: ul. Dworska 8D, 51-361 Wilczyce, Poland',
+        'NIP: 6922391957',
+        'REGON: 524775528',
       ],
     },
     {
       title: 'General contact',
       paragraphs: [
-        'Email: [EMAIL – TO BE COMPLETED]',
+        'Email: kontakt@guildbazaar.com',
         'Phone: [PHONE – TO BE COMPLETED]',
-        'Postal mail: [ADDRESS – TO BE COMPLETED]',
+        'Postal mail: ul. Dworska 8D, 51-361 Wilczyce, Poland',
       ],
     },
     {
       title: 'DSA contact point',
       paragraphs: [
         'Contact point for communication with EU Member State authorities, the European Commission, the Board and users on DSA matters:',
-        '[DSA CONTACT EMAIL – TO BE COMPLETED]',
+        'kontakt@guildbazaar.com',
       ],
     },
     {

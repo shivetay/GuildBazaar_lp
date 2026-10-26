@@ -45,7 +45,7 @@ export const cookiesPl: LegalDocument = {
     {
       title: '6. Więcej informacji',
       paragraphs: [
-        'Szczegóły przetwarzania danych osobowych zawiera Polityka prywatności. Kontakt: [E-MAIL – UZUPEŁNIĆ].',
+        'Szczegóły przetwarzania danych osobowych zawiera Polityka prywatności. Kontakt: kontakt@guildbazaar.com.',
         'W razie rozbieżności między wersją polską a angielską pierwszeństwo ma wersja polska.',
       ],
     },

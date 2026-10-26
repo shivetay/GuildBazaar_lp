@@ -2,7 +2,7 @@ import type { LegalDocument } from '../types'
 
 export const termsEn: LegalDocument = {
   title: 'GuildBazaar Terms of Service',
-  updatedAt: '2026-08-04',
+  updatedAt: '2026-10-26',
   sections: [
     {
       title: '§ 1. General provisions',
@@ -11,9 +11,9 @@ export const termsEn: LegalDocument = {
         'Currently, the Provider publicly offers an informational landing page and a waitlist form. The full GuildBazaar platform — including user accounts, re-enactment group profiles and offer aggregation — will launch later. Provisions on planned features apply once those features are made available.',
         'The Application aggregates and presents offers related to craft, historical re-enactment and LARP communities, enables user accounts and re-enactment group profiles, and facilitates contact with offer publishers. The Application does not sell the goods or services shown in offers and is not an online shop — transactions and their terms, including prices, are agreed directly between users outside the Application. The Application is intended for both businesses and consumers.',
         'These Terms constitute terms of electronic service provision within the meaning of Polish law on providing services by electronic means.',
-        'The service provider is Łukasz Dawidowicz, conducting business as FSP Łukasz Dawidowicz (business address: [ADDRESS – TO BE COMPLETED]), entered in the Polish CEIDG register, NIP: [NIP – TO BE COMPLETED], REGON: [REGON – TO BE COMPLETED] (the “Provider”).',
-        'Contact: email [EMAIL – TO BE COMPLETED]; postal mail [ADDRESS – TO BE COMPLETED]; phone [PHONE – TO BE COMPLETED].',
-        'Under the DSA, the Provider has designated a contact point at: [DSA CONTACT EMAIL – TO BE COMPLETED].',
+        'The service provider is Łukasz Dawidowicz, conducting business as FSP Łukasz Dawidowicz (business address: ul. Dworska 8D, 51-361 Wilczyce, Poland), entered in the Polish CEIDG register, NIP: 6922391957, REGON: 524775528 (the “Provider”).',
+        'Contact: email kontakt@guildbazaar.com; postal mail ul. Dworska 8D, 51-361 Wilczyce, Poland; phone [PHONE – TO BE COMPLETED].',
+        'Under the DSA, the Provider has designated a contact point at: kontakt@guildbazaar.com.',
         'Before using the Application, the User must read these Terms and the Privacy Policy.',
         'If there is any conflict between the Polish and English versions of these Terms, the Polish version prevails.',
       ],
@@ -64,7 +64,7 @@ export const termsEn: LegalDocument = {
     {
       title: '§ 6. Price List',
       paragraphs: [
-        'The current Price List will be available in the Application once paid features launch: [PRICE LIST LINK – TO BE COMPLETED].',
+        'The current Price List will be published in the Application when paid features launch.',
         'The Price List may provide for free use of certain features. A Price List change does not affect fees under agreements concluded before the change.',
       ],
     },
@@ -80,7 +80,7 @@ export const termsEn: LegalDocument = {
       title: '§ 10. User Content and reviews',
       paragraphs: [
         'It is prohibited to post unlawful content, content infringing personal rights or copyright, content inciting violence or hatred, or content promoting competitors of the Provider — except for offers and profiles published in line with the Application’s purpose.',
-        'Anyone may report illegal or Terms-breaching content by email to: [CONTACT EMAIL – TO BE COMPLETED]. A report should include reasons, URL location, reporter details and a good-faith statement.',
+        'Anyone may report illegal or Terms-breaching content by email to: kontakt@guildbazaar.com. A report should include reasons, URL location, reporter details and a good-faith statement.',
         'The Provider reviews reports within 14 days and may remove, block or restore content with reasons. An appeal is available as indicated in the Provider’s response.',
         'Publishing User Content grants the Provider a non-exclusive, royalty-free licence to use the content to provide the Service and in the Provider’s promotional materials.',
       ],
