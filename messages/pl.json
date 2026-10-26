@@ -84,8 +84,8 @@
     "eyebrow": "Wyraź zainteresowanie",
     "title": "Dołącz do listy oczekujących",
     "subtitle": "Zostaw swoje dane — skontaktujemy się z Tobą przed oficjalnym startem platformy.",
-    "successTitle": "Dziękujemy za zainteresowanie!",
-    "successMessage": "Zapisaliśmy Twoje dane. Poinformujemy Cię o starcie platformy i zaprosimy na beta-testy.",
+    "successTitle": "Sprawdź swoją skrzynkę",
+    "successMessage": "Wysłaliśmy na Twój adres wiadomość z linkiem potwierdzającym. Kliknij go w ciągu 7 dni, aby dołączyć do listy. Nie widzisz maila? Zajrzyj do spamu albo wyślij formularz ponownie.",
     "nameLabel": "Imię i nazwisko *",
     "namePlaceholder": "Jan Kowalski",
     "emailLabel": "Adres e-mail *",
@@ -98,7 +98,6 @@
     "privacyBefore": "Wysyłając formularz, akceptujesz ",
     "privacyLink": "Politykę prywatności",
     "privacyAfter": ". Twoje dane wykorzystujemy wyłącznie w celu kontaktu w sprawie startu platformy.",
-    "errorDuplicate": "Ten adres e-mail jest już na liście.",
     "errorValidation": "Sprawdź poprawność wypełnionych pól.",
     "errorRateLimited": "Zbyt wiele zgłoszeń w krótkim czasie. Spróbuj ponownie za kilka minut.",
     "errorServer": "Nie udało się zapisać zgłoszenia. Spróbuj ponownie za chwilę.",
@@ -111,7 +110,10 @@
       "vendor": "Wystawca / Sprzedawca",
       "association": "Przedstawiciel bractwa / stowarzyszenia",
       "organizer": "Organizator wydarzeń"
-    }
+    },
+    "consentLabel": "Wyrażam zgodę na otrzymywanie od Guild Bazaar wiadomości e-mail z informacją o starcie platformy i zaproszeniem do beta-testów. Zgodę mogę wycofać w każdej chwili. Szczegóły w",
+    "consentPrivacyLink": "Polityce prywatności",
+    "errorConsent": "Zaznacz zgodę na otrzymywanie wiadomości, aby dołączyć do listy."
   },
   "Footer": {
     "description": "Platforma dla rekonstruktorów historycznych, LARPowiczów i cosplayerów. Bractwa, rękodzielnictwo i społeczność w jednym miejscu.",
@@ -141,5 +143,18 @@
   },
   "Common": {
     "brand": "Guild Bazaar"
+  },
+  "Confirm": {
+    "metaTitle": "Potwierdzenie zapisu",
+    "pendingTitle": "Potwierdź zapis na listę",
+    "pendingText": "Kliknij przycisk poniżej, aby potwierdzić swój adres e-mail i dołączyć do listy oczekujących Guild Bazaar.",
+    "button": "Potwierdzam zapis",
+    "confirmedTitle": "Zapis potwierdzony!",
+    "confirmedText": "Dziękujemy! Jesteś na liście oczekujących. Napiszemy do Ciebie przed startem platformy.",
+    "alreadyTitle": "Adres już potwierdzony",
+    "alreadyText": "Ten adres e-mail jest już na liście oczekujących. Nic więcej nie musisz robić.",
+    "invalidTitle": "Link wygasł lub jest nieprawidłowy",
+    "invalidText": "Link potwierdzający jest ważny 7 dni. Wyślij formularz ponownie, a dostaniesz nowy.",
+    "back": "Wróć na stronę główną"
   }
 }

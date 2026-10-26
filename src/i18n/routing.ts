@@ -21,6 +21,10 @@ export const routing = defineRouting({
       pl: '/kontakt',
       en: '/contact',
     },
+    '/confirm': {
+      pl: '/potwierdz',
+      en: '/confirm',
+    },
   },
 })
 
