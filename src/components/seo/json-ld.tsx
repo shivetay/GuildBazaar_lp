@@ -32,6 +32,8 @@ export async function SiteJsonLd({ locale }: SiteJsonLdProps) {
             '@id': `${SITE_URL}/#organization`,
             name: SITE_NAME,
             url: SITE_URL,
+            logo: `${SITE_URL}/icon.svg`,
+            email: 'kontakt@guildbazaar.com',
           },
           {
             '@type': 'WebSite',

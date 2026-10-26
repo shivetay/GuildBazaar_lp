@@ -27,7 +27,8 @@ export function getLocalizedUrl(href: Pathnames, locale: Locale) {
 
 export function languageAlternates(href: Pathnames) {
   const languages: Record<string, string> = {
-    'x-default': getLocalizedPath(href, routing.defaultLocale),
+    // "/" picks the locale itself; other pages have no locale-neutral URL
+    'x-default': href === '/' ? '/' : getLocalizedPath(href, routing.defaultLocale),
   }
 
   for (const locale of routing.locales) {
