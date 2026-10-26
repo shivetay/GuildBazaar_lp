@@ -80,6 +80,49 @@
       }
     }
   },
+  "Faq": {
+    "eyebrow": "FAQ",
+    "title": "Najczęstsze pytania",
+    "subtitle": "Wszystko, co warto wiedzieć o Guild Bazaar przed startem.",
+    "items": {
+      "about": {
+        "question": "Czym jest Guild Bazaar?",
+        "answer": "Guild Bazaar to polska platforma dla rekonstruktorów historycznych, LARPowiczów i cosplayerów. Łączy w jednym miejscu bractwa rycerskie, grupy rekonstrukcyjne, rękodzielników, wystawców i organizatorów wydarzeń. Pokazuje też ich rękodzieło szerszemu gronu, nie tylko osobom ze środowiska."
+      },
+      "audience": {
+        "question": "Dla kogo jest platforma?",
+        "answer": "Dla całej sceny historycznej i fantastycznej: członków bractw i stowarzyszeń, rękodzielników (płatnerzy, kowali, krawców, kaletników), wystawców jarmarków i organizatorów festiwali. Także dla każdego, kto szuka unikatowego rękodzieła, kostiumu albo prezentu z historią w tle."
+      },
+      "groups": {
+        "question": "Jak znaleźć bractwo rycerskie lub grupę rekonstrukcyjną?",
+        "answer": "Przejrzysz profile bractw i stowarzyszeń z całej Polski i przefiltrujesz je według epoki, lokalizacji i specjalizacji. Z wybraną grupą skontaktujesz się bezpośrednio przez platformę."
+      },
+      "sell": {
+        "question": "Czy mogę sprzedawać swoje rękodzieło?",
+        "answer": "Tak. Rękodzielnicy i wystawcy zakładają profil pracowni i dodają oferty: zbroje, stroje, rekwizyty, biżuterię albo usługi na zamówienie. Twoje prace zobaczą nie tylko rekonstruktorzy, ale też osoby spoza środowiska. Kupujący kontaktują się z Tobą bezpośrednio, a szczegóły sprzedaży ustalacie między sobą."
+      },
+      "price": {
+        "question": "Czy Guild Bazaar jest darmowy?",
+        "answer": "Tak, korzystanie z platformy jest bezpłatne, bo utrzymujemy ją z reklam. W przyszłości mogą pojawić się dodatkowe opcje promocji profili wystawców i ich ofert."
+      },
+      "launch": {
+        "question": "Kiedy startuje Guild Bazaar?",
+        "answer": "Platforma jest w przygotowaniu. Osoby z listy oczekujących dostaną e-mail przed oficjalnym startem razem z zaproszeniem do beta-testów."
+      },
+      "waitlist": {
+        "question": "Jak dołączyć do listy oczekujących?",
+        "answer": "Wypełnij formularz na tej stronie i kliknij link w mailu potwierdzającym, ważny 7 dni. Z listy możesz się wypisać w każdej chwili."
+      },
+      "epochs": {
+        "question": "Czy platforma dotyczy tylko średniowiecza?",
+        "answer": "Nie. Guild Bazaar obejmuje wszystkie epoki i style: od starożytności i średniowiecza, przez renesans i militaria, po fantasy, LARP i cosplay."
+      },
+      "buyers": {
+        "question": "Czy muszę być rekonstruktorem, żeby coś kupić?",
+        "answer": "Nie. Guild Bazaar jest otwarty dla wszystkich. Znajdziesz tu ręcznie robione stroje, biżuterię, broń dekoracyjną, rekwizyty i dekoracje, idealne na prezent, do kolekcji albo na bal przebierańców."
+      }
+    }
+  },
   "Form": {
     "eyebrow": "Wyraź zainteresowanie",
     "title": "Dołącz do listy oczekujących",
