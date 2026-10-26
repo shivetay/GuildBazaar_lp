@@ -2,7 +2,7 @@ import type { LegalDocument } from '../types'
 
 export const privacyEn: LegalDocument = {
   title: 'Privacy Policy',
-  updatedAt: '2026-08-04',
+  updatedAt: '2026-10-26',
   sections: [
     {
       title: '1. Data controller',
@@ -42,7 +42,6 @@ export const privacyEn: LegalDocument = {
       title: '5. Recipients',
       paragraphs: [
         'Waitlist data is stored with our database infrastructure provider — Supabase.',
-        'The site uses Google Fonts loaded via Next.js / Google Fonts; the font provider may process technical data (e.g. IP address) under its own policy.',
         'The site may be hosted by a cloud provider (e.g. Vercel), which then processes technical data necessary to deliver the site.',
         'Google Ads and Vercel Analytics scripts are not currently implemented. If we add them later, we will update this Policy and, if needed, the Cookie Policy.',
       ],
