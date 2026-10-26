@@ -17,7 +17,7 @@ export const contactPl: LegalDocument = {
       title: 'Kontakt ogólny',
       paragraphs: [
         'E-mail: kontakt@guildbazaar.com',
-        'Telefon: [NUMER TELEFONU – UZUPEŁNIĆ]',
+        'Telefon: +48 697 449 932',
         'Poczta tradycyjna: ul. Dworska 8D, 51-361 Wilczyce',
       ],
     },

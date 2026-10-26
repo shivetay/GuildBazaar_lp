@@ -17,7 +17,7 @@ export const contactEn: LegalDocument = {
       title: 'General contact',
       paragraphs: [
         'Email: kontakt@guildbazaar.com',
-        'Phone: [PHONE – TO BE COMPLETED]',
+        'Phone: +48 697 449 932',
         'Postal mail: ul. Dworska 8D, 51-361 Wilczyce, Poland',
       ],
     },

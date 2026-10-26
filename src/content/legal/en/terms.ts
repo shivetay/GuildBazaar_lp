@@ -12,7 +12,7 @@ export const termsEn: LegalDocument = {
         'The Application aggregates and presents offers related to craft, historical re-enactment and LARP communities, enables user accounts and re-enactment group profiles, and facilitates contact with offer publishers. The Application does not sell the goods or services shown in offers and is not an online shop — transactions and their terms, including prices, are agreed directly between users outside the Application. The Application is intended for both businesses and consumers.',
         'These Terms constitute terms of electronic service provision within the meaning of Polish law on providing services by electronic means.',
         'The service provider is Łukasz Dawidowicz, conducting business as FSP Łukasz Dawidowicz (business address: ul. Dworska 8D, 51-361 Wilczyce, Poland), entered in the Polish CEIDG register, NIP: 6922391957, REGON: 524775528 (the “Provider”).',
-        'Contact: email kontakt@guildbazaar.com; postal mail ul. Dworska 8D, 51-361 Wilczyce, Poland; phone [PHONE – TO BE COMPLETED].',
+        'Contact: email kontakt@guildbazaar.com; postal mail ul. Dworska 8D, 51-361 Wilczyce, Poland; phone +48 697 449 932.',
         'Under the DSA, the Provider has designated a contact point at: kontakt@guildbazaar.com.',
         'Before using the Application, the User must read these Terms and the Privacy Policy.',
         'If there is any conflict between the Polish and English versions of these Terms, the Polish version prevails.',
