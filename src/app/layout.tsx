@@ -7,6 +7,9 @@ type Props = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
+  verification: {
+    google: 'VhBinAXP_EbifHZSVZ4N-fnpGuSHJVXbjppvoybqm-0',
+  },
 }
 
 export default function RootLayout({ children }: Props) {
