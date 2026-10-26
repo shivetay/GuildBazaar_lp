@@ -54,7 +54,7 @@ jobs:
         with:
           version: ${{ env.SUPABASE_CLI_VERSION }}
       - run: supabase link --project-ref "$DEV_PROJECT_REF"
-      - run: supabase db push
+      - run: supabase db push --linked
 
   prod-dry-run:
     name: Dry run against prod
@@ -70,7 +70,7 @@ jobs:
           version: ${{ env.SUPABASE_CLI_VERSION }}
       - run: supabase link --project-ref "$PROD_PROJECT_REF"
       - name: Show migrations that merging would apply
-        run: supabase db push --dry-run
+        run: supabase db push --linked --dry-run
 
   prod:
     name: Push to prod
@@ -85,4 +85,4 @@ jobs:
         with:
           version: ${{ env.SUPABASE_CLI_VERSION }}
       - run: supabase link --project-ref "$PROD_PROJECT_REF"
-      - run: supabase db push
+      - run: supabase db push --linked
