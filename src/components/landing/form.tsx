@@ -14,6 +14,7 @@ import {
 } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 import { Link } from "@/i18n/navigation";
+import { type Attribution, captureAttribution } from "@/lib/attribution";
 import { ALLOWED_ROLES } from "@/utils/constants";
 
 export function LandingForm() {
@@ -31,9 +32,11 @@ export function LandingForm() {
 	// Honeypot value and mount time, checked by the server action
 	const [website, setWebsite] = useState("");
 	const startedAt = useRef(0);
+	const attribution = useRef<Attribution>({});
 
 	useEffect(() => {
 		startedAt.current = Date.now();
+		attribution.current = captureAttribution();
 	}, []);
 
 	function handleSubmit(e: React.FormEvent) {
@@ -50,6 +53,7 @@ export function LandingForm() {
 					locale,
 					website,
 					startedAt: startedAt.current,
+					attribution: attribution.current,
 				});
 
 				if (result.ok) {

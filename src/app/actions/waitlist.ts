@@ -1,5 +1,6 @@
 "use server";
 
+import { type Attribution, sanitizeAttribution } from "@/lib/attribution";
 import { ALLOWED_ROLES } from "@/utils/constants";
 import { createClient } from "@/utils/supabase/server";
 
@@ -24,6 +25,7 @@ export async function submitWaitlist(input: {
 	locale?: string;
 	website?: string;
 	startedAt?: number;
+	attribution?: Attribution;
 }): Promise<WaitlistResult> {
 	// Honeypot filled or form submitted too fast: pretend success, store nothing
 	const elapsed = Date.now() - (input.startedAt ?? 0);
@@ -51,6 +53,7 @@ export async function submitWaitlist(input: {
 
 	try {
 		const supabase = await createClient();
+		const source = sanitizeAttribution(input.attribution);
 
 		const { error } = await supabase.from("waitlist_signups").insert({
 			name,
@@ -58,6 +61,10 @@ export async function submitWaitlist(input: {
 			role,
 			message,
 			locale,
+			utm_source: source.utmSource ?? null,
+			utm_medium: source.utmMedium ?? null,
+			utm_campaign: source.utmCampaign ?? null,
+			referrer: source.referrer ?? null,
 		});
 
 		if (error) {

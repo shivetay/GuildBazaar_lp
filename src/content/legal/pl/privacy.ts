@@ -29,6 +29,7 @@ export const privacyPl: LegalDocument = {
         'rolę / profil zainteresowania (np. rekonstruktor, wystawca, uczestnik)',
         'opcjonalną wiadomość',
         'preferowany język (locale) wskazany przy zapisie',
+        'źródło wejścia na stronę: parametry kampanii (UTM) z linku oraz domenę strony, z której nastąpiło przejście (bez pełnego adresu)',
       ],
     },
     {
@@ -45,7 +46,8 @@ export const privacyPl: LegalDocument = {
       paragraphs: [
         'Dane waitlist są przechowywane u dostawcy infrastruktury bazy danych — Supabase (hosting bazy / backend).',
         'Hosting strony może być realizowany przez dostawcę chmurowego (np. Vercel) — wtedy dostawca przetwarza dane techniczne niezbędne do dostarczenia strony.',
-        'Obecnie na stronie nie są wdrożone skrypty Google Ads ani Vercel Analytics. Jeśli w przyszłości je dodamy, zaktualizujemy tę Politykę oraz — w razie potrzeby — Politykę cookies.',
+        'Do pomiaru ruchu używamy Vercel Web Analytics. Narzędzie nie stosuje cookies ani nie zapisuje adresu IP — zlicza odsłony na podstawie zanonimizowanego identyfikatora, który zmienia się codziennie, i dane zbiorcze (np. odwiedzana podstrona, źródło wejścia, kraj, typ urządzenia i przeglądarki). Podstawa: art. 6 ust. 1 lit. f RODO (prawnie uzasadniony interes w ocenie zasięgu strony).',
+        'Obecnie na stronie nie są wdrożone skrypty Google Ads. Jeśli w przyszłości je dodamy, zaktualizujemy tę Politykę oraz — w razie potrzeby — Politykę cookies.',
       ],
     },
     {

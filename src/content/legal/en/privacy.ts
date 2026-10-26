@@ -27,6 +27,7 @@ export const privacyEn: LegalDocument = {
         'role / interest profile (e.g. re-enactor, vendor, participant)',
         'optional message',
         'preferred language (locale) at signup',
+        'how you reached the site: campaign parameters (UTM) from the link and the domain of the referring site (not the full address)',
       ],
     },
     {
@@ -43,7 +44,8 @@ export const privacyEn: LegalDocument = {
       paragraphs: [
         'Waitlist data is stored with our database infrastructure provider — Supabase.',
         'The site may be hosted by a cloud provider (e.g. Vercel), which then processes technical data necessary to deliver the site.',
-        'Google Ads and Vercel Analytics scripts are not currently implemented. If we add them later, we will update this Policy and, if needed, the Cookie Policy.',
+        'We measure traffic with Vercel Web Analytics. It uses no cookies and does not store IP addresses — it counts page views using an anonymised identifier that changes daily, plus aggregate data (e.g. page visited, referrer, country, device and browser type). Legal basis: Art. 6(1)(f) GDPR (legitimate interest in understanding the site\'s reach).',
+        'Google Ads scripts are not currently implemented. If we add them later, we will update this Policy and, if needed, the Cookie Policy.',
       ],
     },
     {
