@@ -2,7 +2,7 @@
 
 import { CheckCircle2, Loader2, Send } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
-import { useState, useTransition } from "react";
+import { useEffect, useRef, useState, useTransition } from "react";
 import { submitWaitlist } from "@/app/actions/waitlist";
 import { Input } from "@/components/ui/input";
 import {
@@ -28,6 +28,13 @@ export function LandingForm() {
 		role: "",
 		message: "",
 	});
+	// Honeypot value and mount time, checked by the server action
+	const [website, setWebsite] = useState("");
+	const startedAt = useRef(0);
+
+	useEffect(() => {
+		startedAt.current = Date.now();
+	}, []);
 
 	function handleSubmit(e: React.FormEvent) {
 		e.preventDefault();
@@ -41,6 +48,8 @@ export function LandingForm() {
 					role: form.role,
 					message: form.message,
 					locale,
+					website,
+					startedAt: startedAt.current,
 				});
 
 				if (result.ok) {
@@ -50,6 +59,8 @@ export function LandingForm() {
 
 				if (result.error === "duplicate") {
 					setError(t("errorDuplicate"));
+				} else if (result.error === "rate_limited") {
+					setError(t("errorRateLimited"));
 				} else if (result.error === "validation") {
 					setError(t("errorValidation"));
 				} else {
@@ -90,6 +101,21 @@ export function LandingForm() {
 						</div>
 					) : (
 						<form onSubmit={handleSubmit} className="flex flex-col gap-5">
+							<div
+								aria-hidden="true"
+								className="absolute -left-[9999px] h-px w-px overflow-hidden"
+							>
+								<label htmlFor="website">Website</label>
+								<input
+									id="website"
+									name="website"
+									type="text"
+									tabIndex={-1}
+									autoComplete="off"
+									value={website}
+									onChange={(e) => setWebsite(e.target.value)}
+								/>
+							</div>
 							<div className="grid gap-5 sm:grid-cols-2">
 								<div className="flex flex-col gap-1.5">
 									<label

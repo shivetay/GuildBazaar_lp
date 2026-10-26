@@ -1,0 +1,88 @@
+name: Supabase migrations
+
+# Runs only when migrations (or the Supabase config) change.
+#   PR      -> check on a throwaway local DB, apply to dev, dry-run against prod
+#   main    -> apply to prod (gated by the "production" environment)
+on:
+  pull_request:
+    paths:
+      - 'supabase/migrations/**'
+      - 'supabase/config.toml'
+  push:
+    branches: [main]
+    paths:
+      - 'supabase/migrations/**'
+      - 'supabase/config.toml'
+  workflow_dispatch:
+
+# One migration run per target at a time, never cancelled half-way
+concurrency:
+  group: supabase-migrations-${{ github.event_name == 'push' && 'prod' || 'dev' }}
+  cancel-in-progress: false
+
+env:
+  SUPABASE_CLI_VERSION: 2.122.0
+  SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
+  DEV_PROJECT_REF: pbunolpbxqcfwamlnzlm
+  PROD_PROJECT_REF: gfbvjmghrcbatblqedol
+
+jobs:
+  validate:
+    name: Apply migrations to a fresh local DB
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: supabase/setup-cli@v1
+        with:
+          version: ${{ env.SUPABASE_CLI_VERSION }}
+      - name: Start Postgres and apply all migrations
+        run: supabase db start
+      - name: Lint schema
+        run: supabase db lint --level warning --fail-on error
+
+  dev:
+    name: Push to dev
+    needs: validate
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    env:
+      SUPABASE_DB_PASSWORD: ${{ secrets.SUPABASE_DB_PASSWORD_DEV }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: supabase/setup-cli@v1
+        with:
+          version: ${{ env.SUPABASE_CLI_VERSION }}
+      - run: supabase link --project-ref "$DEV_PROJECT_REF"
+      - run: supabase db push --linked
+
+  prod-dry-run:
+    name: Dry run against prod
+    needs: validate
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    env:
+      SUPABASE_DB_PASSWORD: ${{ secrets.SUPABASE_DB_PASSWORD_PROD }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: supabase/setup-cli@v1
+        with:
+          version: ${{ env.SUPABASE_CLI_VERSION }}
+      - run: supabase link --project-ref "$PROD_PROJECT_REF"
+      - name: Show migrations that merging would apply
+        run: supabase db push --linked --dry-run
+
+  prod:
+    name: Push to prod
+    if: github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main')
+    runs-on: ubuntu-latest
+    environment: production
+    env:
+      SUPABASE_DB_PASSWORD: ${{ secrets.SUPABASE_DB_PASSWORD_PROD }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: supabase/setup-cli@v1
+        with:
+          version: ${{ env.SUPABASE_CLI_VERSION }}
+      - run: supabase link --project-ref "$PROD_PROJECT_REF"
+      - run: supabase db push --linked

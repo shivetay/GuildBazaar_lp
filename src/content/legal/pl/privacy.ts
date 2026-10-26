@@ -2,7 +2,7 @@ import type { LegalDocument } from '../types'
 
 export const privacyPl: LegalDocument = {
   title: 'Polityka prywatności',
-  updatedAt: '2026-08-04',
+  updatedAt: '2026-10-26',
   sections: [
     {
       title: '1. Administrator danych',
@@ -44,7 +44,6 @@ export const privacyPl: LegalDocument = {
       title: '5. Odbiorcy danych',
       paragraphs: [
         'Dane waitlist są przechowywane u dostawcy infrastruktury bazy danych — Supabase (hosting bazy / backend).',
-        'Strona korzysta z czcionek Google Fonts ładowanych przez Next.js / Google Fonts — w związku z tym dostawca fontów może przetwarzać dane techniczne (np. adres IP) zgodnie z własną polityką.',
         'Hosting strony może być realizowany przez dostawcę chmurowego (np. Vercel) — wtedy dostawca przetwarza dane techniczne niezbędne do dostarczenia strony.',
         'Obecnie na stronie nie są wdrożone skrypty Google Ads ani Vercel Analytics. Jeśli w przyszłości je dodamy, zaktualizujemy tę Politykę oraz — w razie potrzeby — Politykę cookies.',
       ],

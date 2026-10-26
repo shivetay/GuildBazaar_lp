@@ -100,6 +100,7 @@
     "privacyAfter": ". Twoje dane wykorzystujemy wyłącznie w celu kontaktu w sprawie startu platformy.",
     "errorDuplicate": "Ten adres e-mail jest już na liście.",
     "errorValidation": "Sprawdź poprawność wypełnionych pól.",
+    "errorRateLimited": "Zbyt wiele zgłoszeń w krótkim czasie. Spróbuj ponownie za kilka minut.",
     "errorServer": "Nie udało się zapisać zgłoszenia. Spróbuj ponownie za chwilę.",
     "roles": {
       "participant": "Uczestnik / Hobbysta",
