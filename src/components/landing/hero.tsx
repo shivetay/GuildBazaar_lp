@@ -23,7 +23,7 @@ export async function LandingHero() {
       <div className="pointer-events-none absolute top-1/3 left-1/2 h-64 w-96 -translate-x-1/2 -translate-y-1/2 rounded-full bg-amber-900/8 blur-3xl" />
 
       <div className="relative z-10 flex flex-col items-center">
-        <h1 className="text-aged font-display max-w-4xl text-5xl leading-tight font-bold tracking-wide text-balance md:text-7xl">
+        <h1 className="text-aged font-display max-w-4xl text-[clamp(1.5rem,8vw,3rem)] leading-tight font-bold tracking-wide text-balance md:text-7xl">
           {t.rich('title', {
             highlight: (chunks) => <span className="text-primary">{chunks}</span>,
           })}
