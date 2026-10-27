@@ -24,26 +24,26 @@
   },
   "Features": {
     "eyebrow": "What we offer",
-    "title": "Everything the community needs",
-    "subtitle": "Guild Bazaar brings together everyone in the re-enactment scene — from newcomers to veterans.",
+    "title": "Knightly guilds, handmade craft and vendors in one place",
+    "subtitle": "Guild Bazaar brings together the historical re-enactment, LARP and cosplay scene, from newcomers to veterans, and shows artisans' work to a wider audience of buyers.",
     "items": {
       "associations": {
-        "title": "Guilds and associations",
+        "title": "Knightly guilds and re-enactment groups",
         "description": "Create a profile for your guild or association, share its history and specialization, and recruit new members.",
         "epoch": "Re-enactment"
       },
       "marketplace": {
-        "title": "Artisan marketplace",
+        "title": "Historical craft marketplace",
         "description": "List products or services — armour, costumes, props, weaving and all kinds of craft.",
         "epoch": "Vendors"
       },
       "search": {
-        "title": "Advanced search",
+        "title": "Search by era and location",
         "description": "Filter listings and guilds by era, location, specialization and availability.",
         "epoch": "All eras"
       },
       "vendor": {
-        "title": "Vendor profile",
+        "title": "Workshop and vendor profile",
         "description": "Manage your listings, business description and appear on event vendor lists.",
         "epoch": "Vendors"
       }
@@ -51,17 +51,17 @@
   },
   "Platform": {
     "eyebrow": "See the platform",
-    "title": "What Guild Bazaar looks like",
-    "subtitle": "Browse key views of the platform — from browsing listings to panels for vendors and guilds.",
+    "title": "A marketplace and directory of re-enactment groups",
+    "subtitle": "See what Guild Bazaar will look like: from historical craft listings to panels for vendors and guilds.",
     "items": {
       "offers": {
-        "title": "Listings and craft",
+        "title": "Costumes, armour and craft",
         "description": "Browse offers for armour, costumes and craft from across Poland.",
         "alt": "Artisan listings overview on Guild Bazaar",
         "slug": "listings-and-craft"
       },
       "associations": {
-        "title": "Guilds and associations",
+        "title": "Directory of guilds and associations",
         "description": "Discover re-enactment groups by era, location and specialization.",
         "alt": "List of historical guilds and associations",
         "slug": "guilds-and-associations"
