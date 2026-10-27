@@ -24,26 +24,26 @@
   },
   "Features": {
     "eyebrow": "Co oferujemy",
-    "title": "Wszystko czego potrzebuje społeczność",
-    "subtitle": "Guild Bazaar łączy wszystkich uczestników sceny rekonstrukcyjnej — od nowicjuszy po weteranów.",
+    "title": "Bractwa rycerskie, rękodzieło i wystawcy w jednym miejscu",
+    "subtitle": "Guild Bazaar łączy scenę rekonstrukcji historycznej, LARP-u i cosplayu, od nowicjuszy po weteranów, i pokazuje pracę rękodzielników szerszemu gronu kupujących.",
     "items": {
       "associations": {
-        "title": "Bractwa i stowarzyszenia",
+        "title": "Bractwa rycerskie i grupy rekonstrukcyjne",
         "description": "Stwórz profil swojego bractwa lub stowarzyszenia, opisz historię, specjalizację i rekrutuj nowych członków.",
         "epoch": "Rekonstrukcje"
       },
       "marketplace": {
-        "title": "Marketplace rękodzielników",
+        "title": "Marketplace rękodzieła historycznego",
         "description": "Wystawiaj oferty sprzedaży lub usług — zbroje, stroje, rekwizyty, tkactwo i wszelkie rękodzieło.",
         "epoch": "Wystawcy"
       },
       "search": {
-        "title": "Zaawansowane wyszukiwanie",
+        "title": "Wyszukiwanie według epoki i lokalizacji",
         "description": "Filtruj oferty i bractwa według epoki, lokalizacji, specjalizacji i dostępności.",
         "epoch": "Wszystkie epoki"
       },
       "vendor": {
-        "title": "Profil wystawcy",
+        "title": "Profil pracowni i wystawcy",
         "description": "Zarządzaj swoimi ofertami, opisem działalności i pojawiaj się na listach wystawców wydarzeń.",
         "epoch": "Wystawcy"
       }
@@ -51,17 +51,17 @@
   },
   "Platform": {
     "eyebrow": "Zobacz platformę",
-    "title": "Jak wygląda Guild Bazaar",
-    "subtitle": "Przejrzyj kluczowe widoki platformy — od przeglądania ofert po panele dla wystawców i bractw.",
+    "title": "Marketplace i katalog bractw rekonstrukcyjnych",
+    "subtitle": "Zobacz, jak będzie wyglądać Guild Bazaar: od ofert rękodzieła historycznego po panele dla wystawców i bractw.",
     "items": {
       "offers": {
-        "title": "Oferty i rękodzieło",
+        "title": "Stroje, zbroje i rękodzieło",
         "description": "Przeglądaj oferty zbroi, strojów i rękodzieła z całej Polski.",
         "alt": "Przegląd ofert rękodzielników na Guild Bazaar",
         "slug": "oferty-i-rekodzielo"
       },
       "associations": {
-        "title": "Bractwa i stowarzyszenia",
+        "title": "Katalog bractw i stowarzyszeń",
         "description": "Odkrywaj grupy rekonstrukcyjne według epoki, lokalizacji i specjalizacji.",
         "alt": "Lista bractw i stowarzyszeń historycznych",
         "slug": "bractwa-i-stowarzyszenia"
