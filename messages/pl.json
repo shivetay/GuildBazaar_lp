@@ -10,7 +10,7 @@
   },
   "Hero": {
     "title": "Odkryj świat <highlight>rekonstrukcji,</highlight> LARP-ów i cosplayu",
-    "subtitle": "Nie musisz znać nikogo ze środowiska, żeby zacząć. Guild Bazaar to miejsce, w którym każdy znajdzie wydarzenia, bractwa, rękodzieło i ludzi, którzy wprowadzą go w świat historii i fantastyki.",
+    "subtitle": "Nie musisz znać nikogo ze środowiska, żeby zacząć. Guild Bazaar to miejsce, w którym znajdziesz wydarzenia, bractwa, rękodzieło i ludzi, którzy pomogą Ci wejść w świat historii i fantastyki.",
     "ctaPlatform": "Zobacz platformę",
     "epochs": {
       "medieval": "Średniowiecze",
@@ -91,7 +91,7 @@
       },
       "audience": {
         "question": "Dla kogo jest platforma?",
-        "answer": "Dla każdego, kogo ciekawi świat historii i fantastyki — także jeśli nigdy nie był na turnieju rycerskim ani LARP-ie. Znajdziesz tu wydarzenia na dobry początek i grupy, które chętnie przyjmują nowe osoby. A dla całej sceny: członków bractw i stowarzyszeń, rękodzielników (płatnerzy, kowali, krawców, kaletników), wystawców jarmarków i organizatorów festiwali. Także dla każdego, kto szuka unikatowego rękodzieła, kostiumu albo prezentu z historią w tle."
+        "answer": "Dla każdego, kogo ciekawi świat historii i fantastyki, także bez doświadczenia z turniejami rycerskimi czy LARP-ami. Znajdziesz tu wydarzenia na dobry początek i grupy, które chętnie przyjmują nowe osoby. Platforma jest też dla całej sceny: członków bractw i stowarzyszeń, rękodzielników (płatnerzy, kowali, krawców, kaletników), wystawców jarmarków i organizatorów festiwali. Przyda się również osobom, które szukają unikatowego rękodzieła, kostiumu albo prezentu z historią w tle."
       },
       "groups": {
         "question": "Jak znaleźć bractwo rycerskie lub grupę rekonstrukcyjną?",

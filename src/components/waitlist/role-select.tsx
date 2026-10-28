@@ -1,7 +1,13 @@
 'use client'
 
 import { useTranslations } from 'next-intl'
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select'
 import { ALLOWED_ROLES } from '@/utils/constants'
 
 type Role = (typeof ALLOWED_ROLES)[number]
@@ -25,7 +31,10 @@ export function RoleSelect({ id, value, onChange, disabled }: Props) {
     >
       <SelectTrigger id={id} className="border-border bg-input h-11 w-full">
         <SelectValue placeholder={t('rolePlaceholder')}>
-          {(v) => (typeof v === 'string' && v.length > 0 ? t(`roles.${v as Role}`) : null)}
+          {/* render the placeholder ourselves: returning null here hides it */}
+          {(v) =>
+            typeof v === 'string' && v.length > 0 ? t(`roles.${v as Role}`) : t('rolePlaceholder')
+          }
         </SelectValue>
       </SelectTrigger>
       <SelectContent>

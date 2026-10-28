@@ -72,6 +72,17 @@ export function useWaitlistForm(placement: Placement) {
     sent,
     error,
     submit,
-    fields: { email, setEmail, role, setRole, message, setMessage, consent, setConsent, website, setWebsite },
+    fields: {
+      email,
+      setEmail,
+      role,
+      setRole,
+      message,
+      setMessage,
+      consent,
+      setConsent,
+      website,
+      setWebsite,
+    },
   }
 }

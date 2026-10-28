@@ -42,9 +42,7 @@ export async function LandingHero() {
           ))}
         </div>
 
-        <div
-          className="parchment-card border-border bg-card/90 mt-10 w-full max-w-xl rounded-lg border p-5 backdrop-blur-sm sm:p-6"
-        >
+        <div className="parchment-card border-border bg-card/90 mt-10 w-full max-w-xl rounded-lg border p-5 backdrop-blur-sm sm:p-6">
           <p className="font-display text-foreground mb-4 text-center text-base font-semibold tracking-wide">
             {t('formTitle')}
           </p>
