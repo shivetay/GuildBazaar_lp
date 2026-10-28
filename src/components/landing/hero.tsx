@@ -1,6 +1,7 @@
-import { Shield } from 'lucide-react'
 import { getTranslations } from 'next-intl/server'
-import { OrnamentalBg, SectionDivider } from '@/components/ornamental-bg'
+import { OrnamentalBg } from '@/components/ornamental-bg'
+import { WaitlistForm } from '@/components/waitlist/waitlist-form'
+import { PlatformCta } from './platform-cta'
 
 const epochKeys = [
   { key: 'medieval', symbol: '⚔' },
@@ -13,10 +14,9 @@ const epochKeys = [
 
 export async function LandingHero() {
   const t = await getTranslations('Hero')
-  const tCommon = await getTranslations('Common')
 
   return (
-    <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-4 text-center">
+    <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-4 py-16 text-center">
       <OrnamentalBg />
       <div className="hero-vignette pointer-events-none absolute inset-0" />
       <div className="bg-primary/5 pointer-events-none absolute top-1/2 left-1/2 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full blur-[100px]" />
@@ -42,25 +42,17 @@ export async function LandingHero() {
           ))}
         </div>
 
-        <div className="mt-10 w-64">
-          <SectionDivider symbol={tCommon('brand')} />
+        <div
+          className="parchment-card border-border bg-card/90 mt-10 w-full max-w-xl rounded-lg border p-5 backdrop-blur-sm sm:p-6"
+        >
+          <p className="font-display text-foreground mb-4 text-center text-base font-semibold tracking-wide">
+            {t('formTitle')}
+          </p>
+          <WaitlistForm placement="hero" />
         </div>
 
-        <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row">
-          <a
-            href="#zainteresowanie"
-            className="group bg-primary font-display text-primary-foreground relative inline-flex items-center gap-2 overflow-hidden rounded-sm px-8 py-3 text-sm font-semibold tracking-wider transition-all hover:brightness-110 active:scale-95"
-          >
-            <span className="pointer-events-none absolute inset-0 -translate-x-full skew-x-12 bg-white/10 transition-transform duration-700 group-hover:translate-x-full" />
-            <Shield className="h-4 w-4" />
-            {t('ctaJoin')}
-          </a>
-          <a
-            href="#platforma"
-            className="border-border font-display text-muted-foreground hover:border-primary/50 hover:text-foreground inline-flex items-center gap-2 rounded-sm border px-8 py-3 text-sm font-semibold tracking-wider transition-all active:scale-95"
-          >
-            {t('ctaPlatform')}
-          </a>
+        <div className="mt-6">
+          <PlatformCta>{t('ctaPlatform')}</PlatformCta>
         </div>
       </div>
 

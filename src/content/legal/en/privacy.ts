@@ -22,9 +22,9 @@ export const privacyEn: LegalDocument = {
       title: '3. What data we collect',
       paragraphs: ['Via the waitlist form we process:'],
       list: [
-        'full name',
         'email address',
-        'role / interest profile (e.g. re-enactor, vendor, participant)',
+        'role / interest profile (e.g. re-enactor, vendor, someone just discovering this world)',
+        'which form you signed up with (top or bottom of the page)',
         'optional message',
         'preferred language (locale) at signup',
         'how you reached the site: campaign parameters (UTM) from the link and the domain of the referring site (not the full address)',
@@ -44,7 +44,7 @@ export const privacyEn: LegalDocument = {
       title: '5. Recipients',
       paragraphs: [
         'Waitlist data is stored with our database infrastructure provider — Supabase.',
-        'We send emails (including the confirmation link) through Resend (Resend, Inc.), which receives your email address, name and the message content as needed to deliver it.',
+        'We send emails (including the confirmation link) through Resend (Resend, Inc.), which receives your email address and the message content as needed to deliver it.',
         'The site may be hosted by a cloud provider (e.g. Vercel), which then processes technical data necessary to deliver the site.',
         "We measure traffic with Vercel Web Analytics. It uses no cookies and does not store IP addresses — it counts page views using an anonymised identifier that changes daily, plus aggregate data (e.g. page visited, referrer, country, device and browser type). Legal basis: Art. 6(1)(f) GDPR (legitimate interest in understanding the site's reach).",
         'Google Ads scripts are not currently implemented. If we add them later, we will update this Policy and, if needed, the Cookie Policy.',

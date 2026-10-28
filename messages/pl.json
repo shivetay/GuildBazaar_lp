@@ -9,9 +9,8 @@
     "en": "EN"
   },
   "Hero": {
-    "title": "Jedno miejsce dla <highlight>rekonstruktorów,</highlight> LARPowiczów i cosplayerów",
-    "subtitle": "Guild Bazaar to platforma łącząca społeczności historyczne i fantastyczne — bractwa, stowarzyszenia, rękodzielników i wystawców w jednym miejscu.",
-    "ctaJoin": "Dołącz do listy",
+    "title": "Odkryj świat <highlight>rekonstrukcji,</highlight> LARP-ów i cosplayu",
+    "subtitle": "Nie musisz znać nikogo ze środowiska, żeby zacząć. Guild Bazaar to miejsce, w którym każdy znajdzie wydarzenia, bractwa, rękodzieło i ludzi, którzy wprowadzą go w świat historii i fantastyki.",
     "ctaPlatform": "Zobacz platformę",
     "epochs": {
       "medieval": "Średniowiecze",
@@ -20,7 +19,8 @@
       "militaria": "Militaria",
       "cosplay": "Cosplay",
       "reconstruction": "Rekonstrukcje"
-    }
+    },
+    "formTitle": "Zapisz się — damy znać o starcie i zaprosimy do bety"
   },
   "Features": {
     "eyebrow": "Co oferujemy",
@@ -91,7 +91,7 @@
       },
       "audience": {
         "question": "Dla kogo jest platforma?",
-        "answer": "Dla całej sceny historycznej i fantastycznej: członków bractw i stowarzyszeń, rękodzielników (płatnerzy, kowali, krawców, kaletników), wystawców jarmarków i organizatorów festiwali. Także dla każdego, kto szuka unikatowego rękodzieła, kostiumu albo prezentu z historią w tle."
+        "answer": "Dla każdego, kogo ciekawi świat historii i fantastyki — także jeśli nigdy nie był na turnieju rycerskim ani LARP-ie. Znajdziesz tu wydarzenia na dobry początek i grupy, które chętnie przyjmują nowe osoby. A dla całej sceny: członków bractw i stowarzyszeń, rękodzielników (płatnerzy, kowali, krawców, kaletników), wystawców jarmarków i organizatorów festiwali. Także dla każdego, kto szuka unikatowego rękodzieła, kostiumu albo prezentu z historią w tle."
       },
       "groups": {
         "question": "Jak znaleźć bractwo rycerskie lub grupę rekonstrukcyjną?",
@@ -126,18 +126,14 @@
   "Form": {
     "eyebrow": "Wyraź zainteresowanie",
     "title": "Dołącz do listy oczekujących",
-    "subtitle": "Zostaw swoje dane — skontaktujemy się z Tobą przed oficjalnym startem platformy.",
-    "successTitle": "Sprawdź swoją skrzynkę",
-    "successMessage": "Wysłaliśmy na Twój adres wiadomość z linkiem potwierdzającym. Kliknij go w ciągu 7 dni, aby dołączyć do listy. Nie widzisz maila? Zajrzyj do spamu albo wyślij formularz ponownie.",
-    "nameLabel": "Imię i nazwisko *",
-    "namePlaceholder": "Jan Kowalski",
+    "subtitle": "Dopiero zaczynasz czy działasz od lat — zostaw e-mail, a damy Ci znać o starcie platformy i zaprosimy do beta-testów.",
     "emailLabel": "Adres e-mail *",
     "emailPlaceholder": "jan@example.pl",
     "roleLabel": "Kim jesteś? *",
     "rolePlaceholder": "Wybierz swoją rolę...",
-    "messageLabel": "Dodatkowa wiadomość (opcjonalnie)",
+    "messageLabel": "Wiadomość (opcjonalnie)",
     "messagePlaceholder": "Opowiedz nam czego oczekujesz od Guild Bazaar, czym się zajmujesz lub co chciałbyś zobaczyć na platformie...",
-    "submit": "Wyślij zgłoszenie",
+    "submit": "Dołącz do listy",
     "privacyBefore": "Wysyłając formularz, akceptujesz ",
     "privacyLink": "Politykę prywatności",
     "privacyAfter": ". Twoje dane wykorzystujemy wyłącznie w celu kontaktu w sprawie startu platformy.",
@@ -145,6 +141,7 @@
     "errorRateLimited": "Zbyt wiele zgłoszeń w krótkim czasie. Spróbuj ponownie za kilka minut.",
     "errorServer": "Nie udało się zapisać zgłoszenia. Spróbuj ponownie za chwilę.",
     "roles": {
+      "newcomer": "Dopiero poznaję ten świat",
       "participant": "Uczestnik / Hobbysta",
       "reconstructor": "Rekonstruktor historyczny",
       "larp": "LARPowicz",
@@ -156,10 +153,20 @@
     },
     "consentLabel": "Wyrażam zgodę na otrzymywanie od Guild Bazaar wiadomości e-mail z informacją o starcie platformy i zaproszeniem do beta-testów. Zgodę mogę wycofać w każdej chwili. Szczegóły w",
     "consentPrivacyLink": "Polityce prywatności",
-    "errorConsent": "Zaznacz zgodę na otrzymywanie wiadomości, aby dołączyć do listy."
+    "errorConsent": "Zaznacz zgodę na otrzymywanie wiadomości, aby dołączyć do listy.",
+    "addMessage": "Dodaj wiadomość (opcjonalnie)"
+  },
+  "Success": {
+    "title": "Sprawdź swoją skrzynkę",
+    "message": "Wysłaliśmy na Twój adres wiadomość z linkiem potwierdzającym. Kliknij go w ciągu 7 dni, aby dołączyć do listy. Nie widzisz maila? Zajrzyj do spamu albo wyślij formularz ponownie.",
+    "nextSteps": "W międzyczasie wpadnij na nasz Discord albo zaproś kogoś, kto też chciałby odkryć ten świat.",
+    "discord": "Dołącz do Discorda",
+    "share": "Poleć znajomemu",
+    "copied": "Link skopiowany",
+    "shareText": "Guild Bazaar — miejsce, w którym odkryjesz świat rekonstrukcji, LARP-ów i cosplayu. Zapisz się na listę oczekujących:"
   },
   "Footer": {
-    "description": "Platforma dla rekonstruktorów historycznych, LARPowiczów i cosplayerów. Bractwa, rękodzielnictwo i społeczność w jednym miejscu.",
+    "description": "Miejsce, w którym każdy odkryje świat rekonstrukcji historycznej, LARP-ów i cosplayu. Bractwa, rękodzieło i wydarzenia w jednym miejscu.",
     "copyright": "© 2026 Guild Bazaar",
     "beta": "Projekt w fazie beta",
     "discord": "Dołącz do nas na Discordzie",

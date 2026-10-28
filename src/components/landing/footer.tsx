@@ -1,8 +1,7 @@
-import { MessageCircle, Sword } from 'lucide-react'
+import { Sword } from 'lucide-react'
 import { getTranslations } from 'next-intl/server'
+import { DiscordLink } from '@/components/waitlist/discord-link'
 import { Link } from '@/i18n/navigation'
-
-const DISCORD_URL = 'https://discord.gg/FnJ8geS4u'
 
 const legalLinks = [
   { href: '/terms' as const, key: 'terms' as const },
@@ -25,15 +24,12 @@ export async function LandingFooter() {
           </span>
         </div>
         <p className="text-muted-foreground max-w-md text-sm leading-relaxed">{t('description')}</p>
-        <a
-          href={DISCORD_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-primary hover:text-foreground inline-flex items-center gap-2 text-sm underline-offset-4 transition-colors hover:underline"
+        <DiscordLink
+          placement="footer"
+          className="text-primary hover:text-foreground text-sm underline-offset-4 transition-colors hover:underline"
         >
-          <MessageCircle className="h-4 w-4" />
           {t('discord')}
-        </a>
+        </DiscordLink>
         <nav
           aria-label={t('navLabel')}
           className="text-muted-foreground flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs"

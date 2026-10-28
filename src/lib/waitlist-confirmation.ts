@@ -36,9 +36,12 @@ async function getBaseUrl() {
   return SITE_URL
 }
 
+// Greeting when no name was given ("Cześć Podróżniku," / "Hello traveller,")
+const NAME_FALLBACK: Record<Locale, string> = { pl: 'Podróżniku', en: 'traveller' }
+
 async function sendConfirmationEmail(
   to: string,
-  name: string,
+  name: string | null,
   locale: Locale,
   confirmUrl: string,
   unsubscribeUrl: string,
@@ -57,7 +60,7 @@ async function sendConfirmationEmail(
       to: [to],
       template: {
         id: TEMPLATES[locale],
-        variables: { NAME: name, CONFIRM_URL: confirmUrl, UNSUBSCRIBE_URL: unsubscribeUrl },
+        variables: { NAME: name || NAME_FALLBACK[locale], CONFIRM_URL: confirmUrl, UNSUBSCRIBE_URL: unsubscribeUrl },
       },
     }),
   })
