@@ -9,9 +9,8 @@
     "en": "EN"
   },
   "Hero": {
-    "title": "One place for <highlight>re-enactors,</highlight> LARPers and cosplayers",
-    "subtitle": "Guild Bazaar connects historical and fantasy communities — guilds, associations, artisans and vendors in one place.",
-    "ctaJoin": "Join the waitlist",
+    "title": "Discover the world of <highlight>re-enactment,</highlight> LARP and cosplay",
+    "subtitle": "You don't need to know anyone in the scene to get started. Guild Bazaar is where anyone can find events, guilds, handmade gear and the people who will welcome them into the world of history and fantasy.",
     "ctaPlatform": "See the platform",
     "epochs": {
       "medieval": "Medieval",
@@ -20,7 +19,8 @@
       "militaria": "Militaria",
       "cosplay": "Cosplay",
       "reconstruction": "Re-enactment"
-    }
+    },
+    "formTitle": "Sign up — we'll let you know about the launch and invite you to the beta"
   },
   "Features": {
     "eyebrow": "What we offer",
@@ -91,7 +91,7 @@
       },
       "audience": {
         "question": "Who is the platform for?",
-        "answer": "The whole historical and fantasy scene: guild and association members, artisans (armourers, blacksmiths, tailors, leatherworkers), fair vendors and festival organisers. And anyone looking for unique handmade items, a costume or a gift with a story behind it."
+        "answer": "Anyone curious about history and fantasy — no tournament or LARP experience needed. You'll find beginner-friendly events and groups that welcome newcomers. It's also for the whole scene: guild and association members, artisans (armourers, blacksmiths, tailors, leatherworkers), fair vendors and festival organisers, and for anyone looking for unique handmade items, a costume or a gift with a story behind it."
       },
       "groups": {
         "question": "How do I find a re-enactment group?",
@@ -126,18 +126,14 @@
   "Form": {
     "eyebrow": "Express your interest",
     "title": "Join the waitlist",
-    "subtitle": "Leave your details — we will contact you before the official platform launch.",
-    "successTitle": "Check your inbox",
-    "successMessage": "We sent you an email with a confirmation link. Click it within 7 days to join the waitlist. No email? Check your spam folder or submit the form again.",
-    "nameLabel": "Full name *",
-    "namePlaceholder": "John Smith",
+    "subtitle": "Just starting out or at it for years — leave your email and we'll tell you about the launch and invite you to beta tests.",
     "emailLabel": "Email address *",
     "emailPlaceholder": "john@example.com",
     "roleLabel": "Who are you? *",
     "rolePlaceholder": "Select your role...",
-    "messageLabel": "Additional message (optional)",
+    "messageLabel": "Message (optional)",
     "messagePlaceholder": "Tell us what you expect from Guild Bazaar, what you do or what you would like to see on the platform...",
-    "submit": "Submit application",
+    "submit": "Join the waitlist",
     "privacyBefore": "By submitting this form, you accept our ",
     "privacyLink": "Privacy Policy",
     "privacyAfter": ". We use your data only to contact you about the platform launch.",
@@ -145,6 +141,7 @@
     "errorRateLimited": "Too many signups right now. Please try again in a few minutes.",
     "errorServer": "Could not save your signup. Please try again shortly.",
     "roles": {
+      "newcomer": "New here — just exploring",
       "participant": "Participant / Hobbyist",
       "reconstructor": "Historical re-enactor",
       "larp": "LARPer",
@@ -156,10 +153,20 @@
     },
     "consentLabel": "I agree to receive emails from Guild Bazaar about the platform launch and an invitation to beta tests. I can withdraw my consent at any time. Details in our",
     "consentPrivacyLink": "Privacy Policy",
-    "errorConsent": "Please tick the consent box to join the waitlist."
+    "errorConsent": "Please tick the consent box to join the waitlist.",
+    "addMessage": "Add a message (optional)"
+  },
+  "Success": {
+    "title": "Check your inbox",
+    "message": "We sent you an email with a confirmation link. Click it within 7 days to join the waitlist. No email? Check your spam folder or submit the form again.",
+    "nextSteps": "Meanwhile, drop by our Discord or invite someone who would also like to discover this world.",
+    "discord": "Join our Discord",
+    "share": "Invite a friend",
+    "copied": "Link copied",
+    "shareText": "Guild Bazaar — the place to discover re-enactment, LARP and cosplay. Join the waitlist:"
   },
   "Footer": {
-    "description": "A platform for historical re-enactors, LARPers and cosplayers. Guilds, craft and community in one place.",
+    "description": "The place where anyone can discover historical re-enactment, LARP and cosplay. Guilds, craft and events in one place.",
     "copyright": "© 2026 Guild Bazaar",
     "beta": "Project in beta",
     "discord": "Join us on Discord",

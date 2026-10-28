@@ -22,9 +22,9 @@ export const privacyPl: LegalDocument = {
       title: '3. Jakie dane zbieramy',
       paragraphs: ['W ramach formularza waitlist przetwarzamy:'],
       list: [
-        'imię i nazwisko',
         'adres e-mail',
-        'rolę / profil zainteresowania (np. rekonstruktor, wystawca, uczestnik)',
+        'rolę / profil zainteresowania (np. rekonstruktor, wystawca, osoba dopiero poznająca ten świat)',
+        'formularz, z którego nastąpił zapis (na górze lub na dole strony)',
         'opcjonalną wiadomość',
         'preferowany język (locale) wskazany przy zapisie',
         'źródło wejścia na stronę: parametry kampanii (UTM) z linku oraz domenę strony, z której nastąpiło przejście (bez pełnego adresu)',
@@ -44,7 +44,7 @@ export const privacyPl: LegalDocument = {
       title: '5. Odbiorcy danych',
       paragraphs: [
         'Dane waitlist są przechowywane u dostawcy infrastruktury bazy danych — Supabase (hosting bazy / backend).',
-        'Wiadomości e-mail (w tym wiadomość z linkiem potwierdzającym) wysyłamy za pośrednictwem Resend (Resend, Inc.) — dostawca otrzymuje adres e-mail, imię i treść wiadomości w zakresie niezbędnym do jej doręczenia.',
+        'Wiadomości e-mail (w tym wiadomość z linkiem potwierdzającym) wysyłamy za pośrednictwem Resend (Resend, Inc.) — dostawca otrzymuje adres e-mail i treść wiadomości w zakresie niezbędnym do jej doręczenia.',
         'Hosting strony może być realizowany przez dostawcę chmurowego (np. Vercel) — wtedy dostawca przetwarza dane techniczne niezbędne do dostarczenia strony.',
         'Do pomiaru ruchu używamy Vercel Web Analytics. Narzędzie nie stosuje cookies ani nie zapisuje adresu IP — zlicza odsłony na podstawie zanonimizowanego identyfikatora, który zmienia się codziennie, i dane zbiorcze (np. odwiedzana podstrona, źródło wejścia, kraj, typ urządzenia i przeglądarki). Podstawa: art. 6 ust. 1 lit. f RODO (prawnie uzasadniony interes w ocenie zasięgu strony).',
         'Obecnie na stronie nie są wdrożone skrypty Google Ads. Jeśli w przyszłości je dodamy, zaktualizujemy tę Politykę oraz — w razie potrzeby — Politykę cookies.',

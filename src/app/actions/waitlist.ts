@@ -2,10 +2,11 @@
 
 import { type Attribution, sanitizeAttribution } from "@/lib/attribution";
 import { CONSENT_VERSION, issueConfirmation } from "@/lib/waitlist-confirmation";
-import { ALLOWED_ROLES } from "@/utils/constants";
+import { ALLOWED_ROLES, WAITLIST_PLACEMENTS } from "@/utils/constants";
 import { createClient } from "@/utils/supabase/server";
 
 type Role = (typeof ALLOWED_ROLES)[number];
+type Placement = (typeof WAITLIST_PLACEMENTS)[number];
 
 export type WaitlistResult =
 	| { ok: true }
@@ -18,8 +19,14 @@ function isRole(value: string): value is Role {
 	return (ALLOWED_ROLES as readonly string[]).includes(value);
 }
 
+function toPlacement(value: string | undefined): Placement | null {
+	return (WAITLIST_PLACEMENTS as readonly string[]).includes(value ?? "")
+		? (value as Placement)
+		: null;
+}
+
 export async function submitWaitlist(input: {
-	name: string;
+	name?: string;
 	email: string;
 	role: string;
 	message?: string;
@@ -28,6 +35,7 @@ export async function submitWaitlist(input: {
 	startedAt?: number;
 	attribution?: Attribution;
 	consent?: boolean;
+	placement?: string;
 }): Promise<WaitlistResult> {
 	// Honeypot filled or form submitted too fast: pretend success, store nothing
 	const elapsed = Date.now() - (input.startedAt ?? 0);
@@ -35,15 +43,15 @@ export async function submitWaitlist(input: {
 		return { ok: true };
 	}
 
-	const name = input.name?.trim() ?? "";
+	// name is optional since the short form (#51)
+	const name = input.name?.trim() || null;
 	const email = input.email?.trim().toLowerCase() ?? "";
 	const role = input.role?.trim() ?? "";
 	const message = input.message?.trim() || null;
 	const locale = input.locale?.trim() || null;
 
 	if (
-		name.length < 2 ||
-		name.length > 120 ||
+		(name !== null && (name.length < 2 || name.length > 120)) ||
 		email.length < 3 ||
 		email.length > 254 ||
 		!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) ||
@@ -72,6 +80,7 @@ export async function submitWaitlist(input: {
 			utm_campaign: source.utmCampaign ?? null,
 			referrer: source.referrer ?? null,
 			consent_version: CONSENT_VERSION,
+			placement: toPlacement(input.placement),
 		});
 
 		// 23505 = already signed up: answer like a new signup (no e-mail enumeration)
