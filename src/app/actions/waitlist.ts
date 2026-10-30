@@ -1,5 +1,6 @@
 "use server";
 
+import { after } from "next/server";
 import { type Attribution, sanitizeAttribution } from "@/lib/attribution";
 import { CONSENT_VERSION, issueConfirmation } from "@/lib/waitlist-confirmation";
 import { ALLOWED_ROLES, WAITLIST_PLACEMENTS } from "@/utils/constants";
@@ -100,12 +101,16 @@ export async function submitWaitlist(input: {
 			return { ok: false, error: "server" };
 		}
 
-		try {
-			await issueConfirmation(email);
-		} catch (err) {
-			// the signup is saved; the user can re-submit to get a new link
-			console.error("waitlist confirmation unexpected error", err);
-		}
+		// Sent after the response, so the answer time does not tell whether the
+		// address was new, unconfirmed or already confirmed.
+		after(async () => {
+			try {
+				await issueConfirmation(email);
+			} catch (err) {
+				// the signup is saved; the user can re-submit to get a new link
+				console.error("waitlist confirmation unexpected error", err);
+			}
+		});
 
 		return { ok: true };
 	} catch (err) {
