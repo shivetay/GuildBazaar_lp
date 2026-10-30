@@ -1,3 +1,5 @@
+import 'server-only'
+
 import { createHash, randomBytes } from 'node:crypto'
 import { headers } from 'next/headers'
 import { type Locale, routing } from '@/i18n/routing'

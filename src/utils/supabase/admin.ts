@@ -1,3 +1,5 @@
+import 'server-only'
+
 import { createClient } from '@supabase/supabase-js'
 
 // Server-only client with the secret key: bypasses RLS. Never import it from client code.
