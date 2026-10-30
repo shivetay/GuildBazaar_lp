@@ -3,7 +3,7 @@
 import { type Attribution, sanitizeAttribution } from "@/lib/attribution";
 import { CONSENT_VERSION, issueConfirmation } from "@/lib/waitlist-confirmation";
 import { ALLOWED_ROLES, WAITLIST_PLACEMENTS } from "@/utils/constants";
-import { createClient } from "@/utils/supabase/server";
+import { createAdminClient } from "@/utils/supabase/admin";
 
 type Role = (typeof ALLOWED_ROLES)[number];
 type Placement = (typeof WAITLIST_PLACEMENTS)[number];
@@ -66,7 +66,13 @@ export async function submitWaitlist(input: {
 	}
 
 	try {
-		const supabase = await createClient();
+		// Server-only insert: the table is closed to the publishable key, so the
+		// checks above cannot be skipped and duplicates cannot be probed directly.
+		const supabase = createAdminClient();
+		if (!supabase) {
+			console.error("waitlist insert skipped: SUPABASE_SECRET_KEY not set");
+			return { ok: false, error: "server" };
+		}
 		const source = sanitizeAttribution(input.attribution);
 
 		const { error } = await supabase.from("waitlist_signups").insert({
